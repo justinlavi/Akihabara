@@ -9,18 +9,18 @@ The recommended font is [Fira Code Retina][fira_code] with ligatures enabled.
 
 ### Color palette
 
-<!-- - ![#CA85FF]() `#CA85FF - Heliotrope purple`
-- ![#FF0A70]() `#FF0A70 - Rose red`
-- ![#FFADBF]() `#FFADBF - Cherry blossom pink`
-- ![#FF9270]() `#FF9270 - Atomic tangerine`
-- ![#FFED85]() `#FFED85 - Jasmine yellow`
-- ![#5CFFAD]() `#5CFFAD - Aquamarine green`
-- ![#00E0B7]() `#00E0B7 - Turquoise green`
-- ![#00B1CC]() `#00B1CC - Moonstone blue`
-- ![#479AFF]() `#479AFF - Doger blue`
-- ![#383B57]() `#383B57 - Delft blue`
-- ![#7A8898]() `#7A8898 - Slate gray`
-- ![#DDE0E4]() `#DDE0E4 - Platinum white` -->
+- ![#CA85FF](https://via.placeholder.com/15/CA85FF/000000?text=+) `#CA85FF - Heliotrope purple`
+- ![#FF0A70](https://via.placeholder.com/15/FF0A70/000000?text=+) `#FF0A70 - Rose red`
+- ![#FFADBF](https://via.placeholder.com/15/FFADBF/000000?text=+) `#FFADBF - Cherry blossom pink`
+- ![#FF9270](https://via.placeholder.com/15/FF9270/000000?text=+) `#FF9270 - Atomic tangerine`
+- ![#FFED85](https://via.placeholder.com/15/FFED85/000000?text=+) `#FFED85 - Jasmine yellow`
+- ![#5CFFAD](https://via.placeholder.com/15/5CFFAD/000000?text=+) `#5CFFAD - Aquamarine green`
+- ![#00E0B7](https://via.placeholder.com/15/00E0B7/000000?text=+) `#00E0B7 - Turquoise green`
+- ![#00B1CC](https://via.placeholder.com/15/00B1CC/000000?text=+) `#00B1CC - Moonstone blue`
+- ![#479AFF](https://via.placeholder.com/15/479AFF/000000?text=+) `#479AFF - Doger blue`
+- ![#383B57](https://via.placeholder.com/15/383B57/000000?text=+) `#383B57 - Delft blue`
+- ![#7A8898](https://via.placeholder.com/15/7A8898/000000?text=+) `#7A8898 - Slate gray`
+- ![#DDE0E4](https://via.placeholder.com/15/DDE0E4/000000?text=+) `#DDE0E4 - Platinum white`
 
 ### Notes
 
