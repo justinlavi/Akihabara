@@ -1,0 +1,22 @@
+{
+  "name": "akihabara",
+  "displayName": "Akihabara",
+  "description": "A color theme with rich syntax highlighting. Inspiried by the Shibuya theme",
+  "version": "1.0.0",
+  "publisher": "justin-lavi",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Akihabara",
+        "uiTheme": "vs-dark",
+        "path": "./themes/akihabara-color-theme.json"
+      }
+    ]
+  }
+}
