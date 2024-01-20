@@ -1,22 +1,54 @@
 {
-  "name": "akihabara",
-  "displayName": "Akihabara",
-  "description": "A color theme with rich syntax highlighting. Inspiried by the Shibuya theme",
-  "version": "1.0.0",
-  "publisher": "justin-lavi",
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Akihabara",
-        "uiTheme": "vs-dark",
-        "path": "./themes/akihabara-color-theme.json"
-      }
+    "name": "akihabara",
+    "displayName": "Akihabara",
+    "description": "A color theme with rich syntax highlighting. Inspiried by the Shibuya theme",
+    "icon": "assets/icon.png",
+    "galleryBanner": {
+        "color": "#0c0d12",
+        "theme": "dark"
+    },
+    "version": "1.0.0",
+    "publisher": "justin-lavi",
+    "author": {
+        "name": "Justin Lavi",
+        "email": "rumtankard@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/justinlavi/Akihabara",
+        "email": "rumtankard@gmail.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/justinlavi/Akihabara"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+            "label": "Akihabara",
+            "uiTheme": "vs-dark",
+            "path": "./themes/akihabara-color-theme.json"
+            }
+        ]
+    },
+    "keywords": [
+        "akihabara",
+        "akihabara theme",
+        "tokyo",
+        "tokyo theme",
+        "shibuya",
+        "shibuya theme",
+        "japan",
+        "japan theme",
+        "dark",
+        "dark theme",
+        "cyber",
+        "cyberpunk"
     ]
-  }
 }
