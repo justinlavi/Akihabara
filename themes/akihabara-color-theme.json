@@ -281,18 +281,32 @@
     "window.inactiveBorder": "#0d0f17"
   },
     "tokenColors": [
+
+    // ---------------------------------------------------------------------------
+    // Heliotrope purple: #CA85FF
     {
-        // Heliotrope purple: #CA85FF
         "scope": [
+            // Generic
+            "variable.other.object",
+
             // C++
             "variable.other.property.cpp",
+            "variable.other.property.cli.cpp",
+            "variable.other.property.static.cpp",
+            "meta.preprocessor.macro.cpp",
 
             // C#
+            "variable.other.readwrite.cs",
             "entity.name.variable.property.cs",
             "entity.name.variable.field.cs",
             "variable.other.object.cs",
             "variable.other.object.property.cs",
-            "variable.other.readwrite.cs",
+
+            // Java
+            "variable.other.object.property.java",
+
+            // Python
+            "meta.attribute.python",
 
             // Shell
             "variable.other.assignment.shell",
@@ -301,49 +315,78 @@
         ],
         "settings": { "foreground": "#CA85FF" }
     },
-    {
-        // Rose red: #FF0A70
-        "scope": [
-            // C++
-            "variable.language.cpp",
-            "storage.modifier.cpp",
-            "storage.type.namespace.directive.cpp",
-            "storage.type.built-in.primitive.cpp",
-            "storage.modifier.specifier.const.cpp",
-            "keyword.control.cpp",
-            "keyword.control.default.cpp",
-            "keyword.operator.new.cpp",
-            "keyword.operator.cast.cpp",
-            "keyword.operator.bitwise.cpp",
-            "keyword.control.directive.include.cpp",
-            "keyword.other.using.directive.cpp",
-            "keyword.other.delete.cpp",
 
+    // ---------------------------------------------------------------------------
+    // Rose red: #FF0A70
+    {
+        "scope": [
+            // Generic
+            "keyword",
+            "keyword.control",
+            "keyword.operator",
+            "keyword.other",
+
+            "storage.type",
+            "storage.modifier",
+
+            "variable.language",
+
+            "entity.source",
+
+            // C++
+            "keyword.operator.new.cpp",
+            "entity.name.operator.custom-literal.cpp",
+            "entity.name.operator.custom-literal.number.cpp",
+            "entity.name.operator.custom-literal.string.cpp",
+
+            "storage.modifier.specifier.const",
+            "keyword.control",
+            "keyword.control.default",
+            "keyword.operator.new",
+            "keyword.operator.cast",
+            "keyword.operator.bitwise",
+            "keyword.control.directive.include",
+            "keyword.other.using.directive",
+            "keyword.other.delete",
 
             // C#
+            "storage.modifier.public.cs",
+            "storage.type.namespace.cs",
             "keyword.type.float.cs",
             "keyword.other.directive.using.cs",
             "keyword.operator.expression.new.cs",
 
+            // Java
+            // "keyword.other.package.java",
+
+            // Python
+
             // CMake
-            "keyword.cmake",
-            "entity.source.cmake",
+            // "keyword.cmake",
 
             // Shell
             "support.function.builtin.shell",
         ],
         "settings": { "foreground": "#FF0A70" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Cherry blossom pink: FFADBF
     {
-        // Cherry blossom pink: FFADBF
         "scope": [
+            // Generic
+            "entity.name.type.enum",
+            "variable.other.enummember",
+
             // C++
-            "entity.name.type.enum.cpp",
             "variable.other.enummember.cpp",
 
             // C#
-            "entity.name.type.enum.cs",
-            "entity.name.variable.enum-member.cs",
+            "entity.name.variable.enum-member",
+
+            // Java
+
+            // Python
 
             // CMake
             "storage.source.cmake",
@@ -351,32 +394,55 @@
         ],
         "settings": { "foreground": "#FFADBF" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Atomic tangerine: #FF9270
     {
-        // Atomic tangerine: #FF9270
         "scope": [
+            // Generic
+            "constant",
+            "constant.numeric",
+            "constant.character",
+            "constant.character.escape",
+            "constant.language",
+            "constant.other",
+
             // C++
-            "constant.cpp",
-            "constant.language.cpp",
-            "constant.numeric.cpp",
-            "constant.other.placeholder.cpp",
+            "variable.other.event.cpp",
+            "entity.name.type.class.value.cpp",
 
             // C#
-            "entity.name.variable.event.cs",
+            // "entity.name.variable.event",
+
+            // Java
+
+            // Python
 
             // Shell
-            "constant.other.option",
+            // "constant.other.option",
 
         ],
         "settings": { "foreground": "#FF9270" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Jasmine yellow: #FFED85
     {
-        // Jasmine yellow: #FFED85
         "scope": [
+            // Generic
+            "variable.parameter",
+
             // C++
             "variable.parameter.cpp",
 
             // C#
             "entity.name.variable.parameter.cs",
+
+            // Java
+
+            // Python
+
+            // CMake
 
             // Shell
             "string.unquoted.argument.shell",
@@ -384,55 +450,122 @@
         ],
         "settings": { "foreground": "#FFED85" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Aquamarine green: #5CFFAD
     {
-        // Aquamarine green: #5CFFAD
         "scope": [
+            // Generic
+
             // C++
+            "entity.name.type.class.reference.cpp",
+
+            // C#
+
+            // Java
+
+            // Python
+
+            // CMake
+
+            // Shell
 
         ],
         "settings": { "foreground": "#5CFFAD" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Turquoise green: #00E0B7
     {
-        // Turquoise green: #00E0B7
         "scope": [
+            // Generic
+            "entity.name.type",
+            "entity.name.tag",
+            "entity.name.section",
+            "entity.other.inherited-class",
+            "entity.other.attribute-name",
+
             // C++
             "entity.name.type.cpp",
-            "entity.name.type.class.cpp",
             "entity.name.type.class.templated.cpp",
 
             // C#
-             "entity.name.type.cs",
-            "entity.name.type.class.cs",
+
+            // Java
+
+            // Python
+
+            // CMake
+
+            // Shell
 
         ],
         "settings": { "foreground": "#00E0B7" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Moonstone blue: #00B1CC
     {
-        // Moonstone blue: #00B1CC
         "scope": [
+            // Generic
+            "entity.name.namespace",
+            "variable.other.global",
+
             // C++
             "entity.name.namespace.cpp",
             "variable.other.global.cpp",
 
+            // C#
+            "entity.name.type.namespace",
+
+            // Java
+
+            // Python
+
+            // CMake
+
+            // Shell
+
         ],
         "settings": { "foreground": "#00B1CC" }
     },
-        {
-        // Doger blue: #479AFF
+
+    // ---------------------------------------------------------------------------
+    // Doger blue: #479AFF
+    {
         "scope": [
+            // Generic
+            "entity.name.function",
+            "support.function",
+
             // C++
             "entity.name.function.cpp",
-            "entity.name.function.member.cpp",
+            "entity.name.function.templated.cpp",
+            "entity.name.type.class.generic.cpp",
             "entity.name.function.preprocessor.cpp",
-            "keyword.other.operator.overload.cpp",
-            "punctuation.section.arguments.begin.bracket.round.function.cpp",
-            "punctuation.section.arguments.end.bracket.round.function.cpp",
-            "punctuation.section.parameters.begin.bracket.round.cpp",
-            "punctuation.section.parameters.end.bracket.round.cpp",
+            "entity.name.function.member.cpp",
+            "entity.name.function.operator.cpp",
+            "entity.name.function.member.static.cpp",
+
+            "keyword.other.operator.overload",
+            "punctuation.section.arguments.begin.bracket.round.function",
+            "punctuation.section.arguments.end.bracket.round.function",
+            "punctuation.section.parameters.begin.bracket.round",
+            "punctuation.section.parameters.end.bracket.round",
+
+            "punctuation.definition.parameters.begin",
+            "punctuation.definition.parameters.end",
 
             // C#
-            "punctuation.parenthesis.open.cs",
-            "punctuation.parenthesis.close.cs",
+            "punctuation.parenthesis.open",
+            "punctuation.parenthesis.open",
+            "punctuation.parenthesis.close",
+
+            // Java
+
+            // Python
+
+            // CMake
 
             // Shell
             "entity.name.command.shell",
@@ -440,23 +573,52 @@
         ],
         "settings": { "foreground": "#479AFF" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Delft blue: #383B57
     {
-        // Delft blue: #383B57
         "scope": [
-            // C++
             "comment",
             "comment.line",
-            "storage.type.class.doxygen",
+            "comment.line.double-slash",
+            "comment.line.double-dash",
+            "comment.line.number-sign",
+            "comment.line.percentage",
+            "comment.line.character",
+            "comment.block",
+            "comment.block.documentation",
+
+            // C++
+
+            // Java
+
+            // Python
 
             // CMake
             "comment.source.cmake",
 
+            // Doxygen
+            "storage.type.class.doxygen",
         ],
         "settings": { "foreground": "#383B57" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Slate gray: #7a8898
     {
-        // Slate gray: #7a8898
         "scope": [
+            // Generic
+            "string",
+            "string.quoted",
+            "string.quoted.single",
+            "string.quoted.double",
+            "string.quoted.triple",
+            "string.quoted.other",
+            "string.unquoted",
+            "string.interpolated",
+            "string.triple",
+            "string.other",
+
             // C++
             "entity.name.function.operator",
             "keyword.operator.logical",
@@ -469,7 +631,12 @@
             "punctuation.definition.string.end",
             "constant.character.escape",
             "constant.other.placeholder",
-            "string.quoted",
+
+            // Java
+            "storage.modifier.package.java",
+            "punctuation.bracket.square.java",
+
+            // Python
 
             // CMake
             "string.source.cmake",
@@ -482,14 +649,24 @@
         ],
         "settings": { "foreground": "#7a8898" }
     },
+
+    // ---------------------------------------------------------------------------
+    // Platinum white: #DDE0E4
     {
-        // Platinum white: #DDE0E4
         "scope": [
+            // Generic
+            "variable.other",
+
             // C++
-            "variable.other.local",
+            "variable.other.local.cpp",
 
             // C#
             "entity.name.variable.local.cs",
+
+            // Java
+            "variable.other.definition.java",
+
+            // Python
 
             // CMake
             "source.cmake",
@@ -501,5 +678,6 @@
         ],
         "settings": { "foreground": "#DDE0E4" }
     }
+
   ]
 }
