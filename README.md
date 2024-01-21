@@ -31,16 +31,36 @@ The recommended font is [Fira Code Retina][fira_code] with ligatures enabled.
 - ![#70B0FF](https://via.placeholder.com/20/70B0FF/000000?text=+) `#70B0FF - Ruddy (blue)`
 
 ### Comments:
-- ![#404064](https://via.placeholder.com/20/404064/000000?text=+) `#404064 - Delft (blue)`
+- ![#404064](https://via.placeholder.com/20/404064/000000?text=+) `#404064 - Delft`
 
 ### Member Variables:
-- ![#CC99FF](https://via.placeholder.com/20/CC99FF/000000?text=+) `#CC99FF - Mauve (purple)`
+- ![#CC99FF](https://via.placeholder.com/20/CC99FF/000000?text=+) `#CC99FF - Mauve`
 
 ### Strings/Punctuation:
-- ![#7A8898](https://via.placeholder.com/20/7A8898/000000?text=+) `#7A8898 - Slate (gray)`
+- ![#606480](https://via.placeholder.com/20/606480/000000?text=+) `#606480 - Ultra violet (gray)`
 
 ### Member Variables:
 - ![#DDE0E4](https://via.placeholder.com/20/DDE0E4/000000?text=+) `#DDE0E4 - Platinum (white)`
+
+### Editor:
+- ![#333647](https://via.placeholder.com/20/333647/000000?text=+) `#333647 - Gunmetal`
+- ![#606480](https://via.placeholder.com/20/606480/000000?text=+) `#606480 - Ultra Violet`
+- ![#7582BD](https://via.placeholder.com/20/7582BD/000000?text=+) `#7582BD - Glaucous`
+- ![#404064](https://via.placeholder.com/20/404064/000000?text=+) `#404064 - Delft`
+- ![#0C0D12](https://via.placeholder.com/20/0C0D12/000000?text=+) `#0C0D12 - Night`
+
+### Success:
+- ![#0CD47A](https://via.placeholder.com/20/0CD47A/000000?text=+) `#0CD47A - Emerald`
+
+### Errors:
+- ![#D84657](https://via.placeholder.com/20/D84657/000000?text=+) `#D84657 - Amaranth`
+
+### Warnings:
+- ![#FFED85](https://via.placeholder.com/20/FFED85/000000?text=+) `#FFED85 - Jasmine`
+
+### Modifications:
+- ![#338FFF](https://via.placeholder.com/20/338FFF/000000?text=+) `#338FFF - Doger`
+
 
 
 ## Notes
