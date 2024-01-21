@@ -283,7 +283,7 @@
     "tokenColors": [
 
     // ---------------------------------------------------------------------------
-    // Heliotrope purple: #CA85FF
+    // Mauve (purple): #CC99FF
     {
         "scope": [
             // Generic
@@ -307,17 +307,18 @@
 
             // Python
             "meta.attribute.python",
+            "support.variable.magic.python",
 
             // Shell
             "variable.other.assignment.shell",
             "variable.other.normal.shell",
 
         ],
-        "settings": { "foreground": "#CA85FF" }
+        "settings": { "foreground": "#CC99FF" }
     },
 
     // ---------------------------------------------------------------------------
-    // Rose red: #FF0A70
+    // Rose (red): #FF1778
     {
         "scope": [
             // Generic
@@ -367,11 +368,11 @@
             // Shell
             "support.function.builtin.shell",
         ],
-        "settings": { "foreground": "#FF0A70" }
+        "settings": { "foreground": "#FF1778" }
     },
 
     // ---------------------------------------------------------------------------
-    // Cherry blossom pink: FFADBF
+    // Cherry blossom (pink): FFADBF
     {
         "scope": [
             // Generic
@@ -385,8 +386,10 @@
             "entity.name.variable.enum-member",
 
             // Java
+            "constant.other.enum.java",
 
             // Python
+            "constant.other.caps.python",
 
             // CMake
             "storage.source.cmake",
@@ -396,7 +399,7 @@
     },
 
     // ---------------------------------------------------------------------------
-    // Atomic tangerine: #FF9270
+    // Atomic tangerine (orange) : #FFA185
     {
         "scope": [
             // Generic
@@ -422,11 +425,11 @@
             // "constant.other.option",
 
         ],
-        "settings": { "foreground": "#FF9270" }
+        "settings": { "foreground": "#FFA185" }
     },
 
     // ---------------------------------------------------------------------------
-    // Jasmine yellow: #FFED85
+    // Vanilla (yellow): #FFF3AD
     {
         "scope": [
             // Generic
@@ -448,34 +451,11 @@
             "string.unquoted.argument.shell",
 
         ],
-        "settings": { "foreground": "#FFED85" }
+        "settings": { "foreground": "#FFF3AD" }
     },
 
     // ---------------------------------------------------------------------------
-    // Aquamarine green: #5CFFAD
-    {
-        "scope": [
-            // Generic
-
-            // C++
-            "entity.name.type.class.reference.cpp",
-
-            // C#
-
-            // Java
-
-            // Python
-
-            // CMake
-
-            // Shell
-
-        ],
-        "settings": { "foreground": "#5CFFAD" }
-    },
-
-    // ---------------------------------------------------------------------------
-    // Turquoise green: #00E0B7
+    // Aquamarine (green): #00F5C8
     {
         "scope": [
             // Generic
@@ -488,23 +468,31 @@
             // C++
             "entity.name.type.cpp",
             "entity.name.type.class.templated.cpp",
+            "entity.name.type.enum.cpp",
+            "entity.name.type.class.reference.cpp",
+            "punctuation.section.angle-brackets.begin.template.call.cpp",
+            "punctuation.section.angle-brackets.end.template.call.cpp",
 
             // C#
+            "punctuation.definition.typeparameters.begin.cs",
+            "punctuation.definition.typeparameters.end.cs",
 
             // Java
 
             // Python
+            "support.type.python",
+            "punctuation.definition.decorator.python",
 
             // CMake
 
             // Shell
 
         ],
-        "settings": { "foreground": "#00E0B7" }
+        "settings": { "foreground": "#00F5C8" }
     },
 
     // ---------------------------------------------------------------------------
-    // Moonstone blue: #00B1CC
+    // Light sea (green): #0AAEA8
     {
         "scope": [
             // Generic
@@ -519,6 +507,7 @@
             "entity.name.type.namespace",
 
             // Java
+            "variable.other.object.java",
 
             // Python
 
@@ -527,11 +516,11 @@
             // Shell
 
         ],
-        "settings": { "foreground": "#00B1CC" }
+        "settings": { "foreground": "#0AAEA8" }
     },
 
     // ---------------------------------------------------------------------------
-    // Doger blue: #479AFF
+    // Ruddy (blue): #70B0FF
     {
         "scope": [
             // Generic
@@ -564,18 +553,26 @@
             // Java
 
             // Python
+            "meta.function-call.generic.python",
+            "punctuation.definition.arguments.begin.python",
+            "punctuation.definition.arguments.end.python",
 
             // CMake
 
             // Shell
             "entity.name.command.shell",
-
+            "punctuation.definition.arguments.shell",
+            "punctuation.definition.group.shell",
+            "punctuation.definition.evaluation.parens.begin.shell",
+            "punctuation.definition.evaluation.parens.end.shell",
+            "punctuation.definition.evaluation.arithmetic.begin.shell",
+            "punctuation.definition.evaluation.arithmetic.end.shell",
         ],
-        "settings": { "foreground": "#479AFF" }
+        "settings": { "foreground": "#70B0FF" }
     },
 
     // ---------------------------------------------------------------------------
-    // Delft blue: #383B57
+    // Delft (blue): #404064
     {
         "scope": [
             "comment",
@@ -600,11 +597,11 @@
             // Doxygen
             "storage.type.class.doxygen",
         ],
-        "settings": { "foreground": "#383B57" }
+        "settings": { "foreground": "#404064" }
     },
 
     // ---------------------------------------------------------------------------
-    // Slate gray: #7a8898
+    // Slate (gray): #7A8898
     {
         "scope": [
             // Generic
@@ -618,6 +615,7 @@
             "string.interpolated",
             "string.triple",
             "string.other",
+            "punctuation.terminator",
 
             // C++
             "entity.name.function.operator",
@@ -632,6 +630,11 @@
             "constant.character.escape",
             "constant.other.placeholder",
 
+            // C#
+            "punctuation.curlybrace.open.cs",
+            "punctuation.curlybrace.close.cs",
+            "punctuation.terminator.statement.cs",
+
             // Java
             "storage.modifier.package.java",
             "punctuation.bracket.square.java",
@@ -644,14 +647,12 @@
             // Shell
             "string.quoted.double.shell",
             "punctuation.definition.string",
-
-
         ],
-        "settings": { "foreground": "#7a8898" }
+        "settings": { "foreground": "#7A8898" }
     },
 
     // ---------------------------------------------------------------------------
-    // Platinum white: #DDE0E4
+    // Platinum (white): #DDE0E4
     {
         "scope": [
             // Generic
