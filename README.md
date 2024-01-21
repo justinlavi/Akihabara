@@ -45,15 +45,13 @@ The recommended font is [Fira Code Retina][fira_code] with ligatures enabled.
 
 ## Notes
 
-This theme is optimized for the following languages at the moment:
-C/C++
-C#
-CMake
-Shell
-
-I will be updating this theme to support:
-Java
-Python
+This theme is optimized for the following languages:
+- C/C++
+- C#
+- Python
+- Java
+- CMake
+- Shell
 
 ## See also
 
