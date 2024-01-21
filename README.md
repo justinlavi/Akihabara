@@ -1,10 +1,10 @@
 # 秋葉原 ・ Akihabara
 
-## A modern, vibrant color theme inspired by Shibuya.
+## A modern, vibrant color theme inspired by Akihabara, Japan.
 
 Akihabara is a dark Visual Studio Code color theme featuring bright, vibrant text colors and dark, subtle blue-toned background.
 
-It's based on the excellent [Shubya][shibuya] color theme by [jeroen-meijer][jeroen-meijer].
+I was inspired to create this theme after using the fantastic [Shubya][shibuya] theme by [jeroen-meijer][jeroen-meijer].
 The recommended font is [Fira Code Retina][fira_code] with ligatures enabled.
 
 ## Color palette
