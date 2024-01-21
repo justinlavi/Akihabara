@@ -53,6 +53,8 @@ I was inspired to create this theme after using the fantastic [Shubya][shibuya] 
 ### Warnings:
 - ![#FFED85](https://via.placeholder.com/15/FFED85/000000?text=+) `#FFED85 - Jasmine`
 ### Modifications:
+- ![#FF7247](https://via.placeholder.com/15/FF7247/000000?text=+) `#FF7247 - Coral`
+### Info:
 - ![#338FFF](https://via.placeholder.com/15/338FFF/000000?text=+) `#338FFF - Doger blue`
 
 ## Notes
