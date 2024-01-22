@@ -11,28 +11,28 @@ I was inspired to create this theme after using the fantastic [Shubya][shibuya] 
 - ![#FF1778](https://via.placeholder.com/15/FF1778/000000?text=+) `#FF1778 - Rose`
 
 ### Enumerators:
-- ![#FFADBF](https://via.placeholder.com/15/FFADBF/000000?text=+) `#FFADBF - Cherry blossom pink`
+- ![#FF5EA0](https://via.placeholder.com/15/FF5EA0/000000?text=+) `#FF5EA0 - Cyclamen`
 
 ### Constants/Numeric:
 - ![#FFA185](https://via.placeholder.com/15/FFA185/000000?text=+) `#FFA185 - Atomic tangerine`
 
 ### Arguments/Parameters:
-- ![#FFF3AD](https://via.placeholder.com/15/FFF3AD/000000?text=+) `#FFF3AD - Vanilla`
+- ![#FFF3A8](https://via.placeholder.com/15/FFF3A8/000000?text=+) `#FFF3A8 - Vanilla`
 
 ### Types/Classes/Templates:
-- ![#00F5C8](https://via.placeholder.com/15/00F5C8/000000?text=+) `#00F5C8 - Aquamarine`
+- ![#00E0B7](https://via.placeholder.com/15/00E0B7/000000?text=+) `#00E0B7 - Turquoise`
 
 ### Globals/Namespaces:
-- ![#0AAEA8](https://via.placeholder.com/15/0AAEA8/000000?text=+) `#0AAEA8 - Light sea green`
+- ![#0BC1BB](https://via.placeholder.com/15/0BC1BB/000000?text=+) `#0BC1BB - Robin egg blue`
 
 ### Functions:
-- ![#70B0FF](https://via.placeholder.com/15/70B0FF/000000?text=+) `#70B0FF - Ruddy blue`
+- ![#0AB1FF](https://via.placeholder.com/15/0AB1FF/000000?text=+) `#0AB1FF - Picton blue`
 
 ### Comments:
 - ![#404064](https://via.placeholder.com/15/404064/000000?text=+) `#404064 - Delft blue`
 
 ### Member Variables:
-- ![#CC99FF](https://via.placeholder.com/15/CC99FF/000000?text=+) `#CC99FF - Mauve`
+- ![#9470FF](https://via.placeholder.com/15/9470FF/000000?text=+) `#9470FF - Medium slate blue`
 
 ### Local Variables:
 - ![#DDE0E4](https://via.placeholder.com/15/DDE0E4/000000?text=+) `#DDE0E4 - Platinum`
@@ -51,11 +51,11 @@ I was inspired to create this theme after using the fantastic [Shubya][shibuya] 
 ### Errors:
 - ![#D84657](https://via.placeholder.com/15/D84657/000000?text=+) `#D84657 - Amaranth`
 ### Warnings:
-- ![#FFED85](https://via.placeholder.com/15/FFED85/000000?text=+) `#FFED85 - Jasmine`
+- ![#FFEA70](https://via.placeholder.com/15/FFEA70/000000?text=+) `#FFEA70 - Maize`
 ### Modifications:
-- ![#FF7247](https://via.placeholder.com/15/FF7247/000000?text=+) `#FF7247 - Coral`
+- ![#FB7B5C](https://via.placeholder.com/15/FB7B5C/000000?text=+) `#FB7B5C - Burnt sienna`
 ### Info:
-- ![#338FFF](https://via.placeholder.com/15/338FFF/000000?text=+) `#338FFF - Doger blue`
+- ![#70B0FF](https://via.placeholder.com/15/70B0FF/000000?text=+) `#70B0FF - Ruddy blue`
 
 ## Notes
 
