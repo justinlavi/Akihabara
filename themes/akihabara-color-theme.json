@@ -22,8 +22,8 @@
         "textBlockQuote.background": "#0C0D12",
         "textBlockQuote.border": "#28283E",
         "textCodeBlock.background": "#0C0D12",
+        "textLink.foreground": "#615DAC",
         "textLink.activeForeground": "#8B8AE5",
-        "textLink.foreground": "#404064",
         "textPreformat.foreground": "#404064",
         "textSeparator.foreground": "#28283E",
 
@@ -154,7 +154,7 @@
         "minimapGutter.modifiedBackground": "#FB7B5C",
         "minimapGutter.deletedBackground": "#D84657",
 
-        // Editor groups & tabs
+        // Editor groups
         "editorGroup.border": "#28283E",
         "editorGroup.dropBackground": "#8B8AE550",
         "editorGroupHeader.noTabsBackground": "#0C0D12",
@@ -166,33 +166,41 @@
         "editorGroup.dropIntoPromptForeground": "#8B8AE550",
         "editorGroup.dropIntoPromptBackground": "#0C0D12",
         "editorGroup.dropIntoPromptBorder": "#28283E",
-        "tab.activeBackground": "#8B8AE525",
-        "tab.unfocusedActiveBackground": "#8B8AE5",
-        "tab.activeForeground": "#8B8AE5",
-        "tab.border": "#28283E",
-        "tab.activeBorder": "#8B8AE5",
-        "tab.unfocusedActiveBorder": "#8B8AE550",
-        "tab.activeBorderTop": "#28283E",
-        "tab.unfocusedActiveBorderTop": "#8B8AE550",
-        "tab.lastPinnedBorder": "#28283E",
-        "tab.inactiveBackground": "#0C0D12",
-        "tab.unfocusedInactiveBackground": "#0C0D12",
-        "tab.inactiveForeground": "#5E6482",
-        "tab.unfocusedInactiveForeground": "#5E6482",
-        "tab.hoverBackground": "#8B8AE550",
-        "tab.unfocusedHoverBackground": "#8B8AE525",
-        "tab.hoverForeground": "#8B8AE5",
-        "tab.unfocusedHoverForeground": "#8B8AE525",
-        "tab.hoverBorder": "#8B8AE5",
-        "tab.unfocusedHoverBorder": "#8B8AE5",
-        "tab.activeModifiedBorder": "#FB7B5C",
-        "tab.inactiveModifiedBorder": "#FB7B5C",
-        "tab.unfocusedActiveModifiedBorder": "#FB7B5C",
-        "tab.unfocusedInactiveModifiedBorder": "#FB7B5C",
-        "tab.unfocusedActiveForeground": "#8B8AE550",
         "editorPane.background": "#0C0D12",
         "sideBySideEditor.horizontalBorder": "#28283E",
         "sideBySideEditor.verticalBorder": "#28283E",
+
+        // Tab colors
+        // Active
+        "tab.activeBackground": "#8B8AE525",
+        "tab.activeForeground": "#8B8AE5",
+        "tab.activeBorder": "#8B8AE5",
+        "tab.activeBorderTop": "#8B8AE5",
+        // Inactive
+        "tab.inactiveBackground": "#0C0D12",
+        "tab.inactiveForeground": "#5E6482",
+        "tab.inactiveModifiedBorder": "#FB7B5C",
+        // Hover
+        "tab.hoverBackground": "#8B8AE550",
+        "tab.hoverForeground": "#8B8AE5",
+        "tab.hoverBorder": "#8B8AE5",
+        // Modified
+        "tab.activeModifiedBorder": "#FB7B5C",
+        "tab.unfocusedActiveModifiedBorder": "#FB7B5C",
+        "tab.unfocusedInactiveModifiedBorder": "#FB7B5C",
+        // Unfocused
+        "tab.unfocusedActiveBackground": "#8B8AE525",
+        "tab.unfocusedActiveForeground": "#8B8AE590",
+        "tab.unfocusedActiveBorder": "#8B8AE525",
+        "tab.unfocusedActiveBorderTop": "#8B8AE525",
+        "tab.unfocusedInactiveBackground": "#0C0D12",
+        "tab.unfocusedInactiveForeground": "#5E6482",
+        "tab.unfocusedHoverBackground": "#8B8AE550",
+        "tab.unfocusedHoverForeground": "#8B8AE5",
+        "tab.unfocusedHoverBorder": "#8B8AE5",
+        // Miscellaneous
+        "tab.border": "#28283E",
+        "tab.lastPinnedBorder": "#28283E",
 
         // Editor colors
         "editor.background": "#0C0D12",
@@ -280,14 +288,14 @@
         "editorGutter.deletedBackground": "#D84657",
 
         // Diff editor colors
-        "diffEditor.insertedTextBackground": "#0CD47A50",
-        "diffEditor.insertedTextBorder": "#0CD47A",
-        "diffEditor.removedTextBackground": "#D8465750",
-        "diffEditor.removedTextBorder": "#D84657",
+        "diffEditor.insertedTextBackground": "#0CD47A25",
+        "diffEditor.insertedTextBorder": "#0CD47A50",
+        "diffEditor.removedTextBackground": "#D8465725",
+        "diffEditor.removedTextBorder": "#D8465750",
         "diffEditor.border": "#28283E",
         "diffEditor.diagonalFill": "#404064",
-        "diffEditor.insertedLineBackground": "#0CD47A50",
-        "diffEditorGutter.removedLineBackground": "#D8465750",
+        "diffEditor.insertedLineBackground": "#0CD47A25",
+        "diffEditorGutter.removedLineBackground": "#D8465725",
 
         // Chat colors
 
