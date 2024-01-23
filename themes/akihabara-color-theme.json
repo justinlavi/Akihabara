@@ -83,28 +83,29 @@
         "badge.foreground": "#DDE0E4",
 
         // Progress bar
-        "progressBar.background": "#8B8AE5",
+        "progressBar.background": "#0CD47A",
 
         // Lists and trees
-        "list.activeSelectionBackground": "#8B8AE550",
+        "list.activeSelectionBackground": "#8B8AE525",
         "list.activeSelectionForeground": "#8B8AE5",
-        "list.inactiveSelectionIconForeground": "#8B8AE5",
-        "list.dropBackground": "#0C0D12",
-        "list.focusBackground": "#0C0D12",
-        "list.focusForeground": "#5E6482",
+        "list.dropBackground": "#8B8AE550",
+        "list.focusBackground": "#8B8AE525",
+        "list.focusForeground": "#8B8AE5",
         "list.focusHighlightForeground": "#8B8AE550",
         "list.focusOutline": "#8B8AE5",
         "list.focusAndSelectionOutline": "#8B8AE5",
         "list.highlightForeground": "#8B8AE550",
         "list.hoverBackground": "#8B8AE525",
-        "list.hoverForeground": "#5E6482",
-        "list.inactiveSelectionBackground": "#8B8AE550",
+        "list.hoverForeground": "#8B8AE5",
+        "list.inactiveSelectionBackground": "#8B8AE525",
+        "list.inactiveSelectionForeground": "#8B8AE5",
+        "list.inactiveSelectionIconForeground": "#8B8AE5",
         "list.inactiveFocusBackground": "#0C0D12",
         "list.inactiveFocusOutline": "#8B8AE5",
-        "list.inactiveSelectionForeground": "#8B8AE5",
         "list.invalidItemForeground": "#D84657",
         "list.errorForeground": "#D84657",
         "list.warningForeground": "#FFEA70",
+
         "listFilterWidget.background": "#0C0D12",
         "listFilterWidget.outline": "#28283E",
         "listFilterWidget.noMatchesOutline": "#D84657",
@@ -225,7 +226,7 @@
         "editor.findMatchHighlightBackground": "#8B8AE510",
         "editor.findRangeHighlightBackground": "#8B8AE510",
         "editor.findMatchBorder": "#8B8AE5",
-        "editor.findMatchHighlightBorder": "#8B8AE5",
+        "editor.findMatchHighlightBorder": "#8B8AE575",
         "editor.findRangeHighlightBorder": "#0C0D12",
         "search.resultsInfoForeground": "#8B8AE5",
         "searchEditor.findMatchBackground": "#0C0D12",
@@ -250,13 +251,13 @@
         "editorLightBulb.foreground": "#FFEA70",
         "editorLightBulbAutoFix.foreground": "#FFEA70",
         "editorLightBulbAi.foreground": "#FFEA70",
-        "editorBracketMatch.background": "#8B8AE550",
-        "editorBracketMatch.border": "#8B8AE550",
+        "editorBracketMatch.background": "#8B8AE525",
+        "editorBracketMatch.border": "#8B8AE5",
         "editor.foldBackground": "#28283E50",
         "editorOverviewRuler.background": "#0C0D12",
         "editorOverviewRuler.addedForeground": "#0CD47A75",
         "editorOverviewRuler.border": "#28283E",
-        "editorOverviewRuler.bracketMatchForeground": "#8B8AE550",
+        "editorOverviewRuler.bracketMatchForeground": "#8B8AE5",
         "editorOverviewRuler.deletedForeground": "#D84657",
         "editorOverviewRuler.errorForeground": "#D84657",
         "editorOverviewRuler.findMatchForeground": "#8B8AE550",
@@ -304,19 +305,21 @@
 
 
         // Editor widget colors
-        "editorWidget.foreground": "#5e6482",
+        "editorWidget.foreground": "#5E6482",
         "editorWidget.background": "#0C0D12",
         "editorWidget.border": "#8B8AE550",
         "editorWidget.resizeBorder": "#404064",
+
         "editorSuggestWidget.background": "#0C0D12",
-        "editorSuggestWidget.border": "#28283E",
         "editorSuggestWidget.foreground": "#5E6482",
-        "editorSuggestWidget.highlightForeground": "#8B8AE5",
-        "editorSuggestWidget.selectedBackground": "#8B8AE5",
-        "editorSuggestWidget.focusHighlightForeground": "#8B8AE550",
-        "editorSuggestWidget.selectedForeground": "#8B8AE550",
+        "editorSuggestWidget.border": "#28283E",
+        "editorSuggestWidget.selectedBackground": "#8B8AE525",
+        "editorSuggestWidget.selectedForeground": "#8B8AE5",
         "editorSuggestWidget.selectedIconForeground": "#8B8AE5",
+        "editorSuggestWidget.highlightForeground": "#8B8AE5",
+        "editorSuggestWidget.focusHighlightForeground": "#8B8AE5",
         "editorSuggestWidgetStatus.foreground": "#0CD47A",
+
         "editorHoverWidget.foreground": "#8B8AE5",
         "editorHoverWidget.background": "#0C0D12",
         "editorHoverWidget.border": "#28283E",
@@ -451,15 +454,15 @@
         "menu.border": "#28283E",
 
         // Command center colors
-        "commandCenter.foreground": "#5E6482",
-        "commandCenter.activeForeground": "#8B8AE5",
         "commandCenter.background": "#0C0D12",
-        "commandCenter.activeBackground": "#0C0D12",
+        "commandCenter.foreground": "#5E6482",
         "commandCenter.border": "#28283E",
-        "commandCenter.inactiveForeground": "#8B8AE5",
-        "commandCenter.inactiveBorder": "#28283E",
+        "commandCenter.activeBackground": "#0C0D12",
+        "commandCenter.activeForeground": "#8B8AE5",
         "commandCenter.activeBorder": "#28283E",
         "commandCenter.debuggingBackground": "#0C0D12",
+        "commandCenter.inactiveForeground": "#8B8AE5",
+        "commandCenter.inactiveBorder": "#28283E",
 
         // Notification colors
         "notificationCenter.border": "#28283E",
@@ -506,7 +509,7 @@
 
         // Keybinding label colors
         "keybindingLabel.background": "#0C0D12",
-        "keybindingLabel.foreground": "#DDE0E4",
+        "keybindingLabel.foreground": "#8B8AE5",
         "keybindingLabel.border": "#28283E",
         "keybindingLabel.bottomBorder": "#28283E",
 
@@ -599,16 +602,16 @@
         // "walkthrough.stepTitle.foreground": "#DDE0E4",
 
         // Git colors
-        // "gitDecoration.addedResourceForeground": "#DDE0E4",
-        // "gitDecoration.modifiedResourceForeground": "#DDE0E4",
-        // "gitDecoration.deletedResourceForeground": "#DDE0E4",
-        // "gitDecoration.renamedResourceForeground": "#DDE0E4",
-        // "gitDecoration.stageModifiedResourceForeground": "#DDE0E4",
-        // "gitDecoration.stageDeletedResourceForeground": "#DDE0E4",
-        // "gitDecoration.untrackedResourceForeground": "#DDE0E4",
-        // "gitDecoration.ignoredResourceForeground": "#DDE0E4",
-        // "gitDecoration.conflictingResourceForeground": "#DDE0E4",
-        // "gitDecoration.submoduleResourceForeground": "#DDE0E4",
+        "gitDecoration.addedResourceForeground": "#0CD47A",
+        "gitDecoration.deletedResourceForeground": "#D84657",
+        "gitDecoration.modifiedResourceForeground": "#FB7B5C",
+        "gitDecoration.renamedResourceForeground": "#70B0FF",
+        "gitDecoration.stageModifiedResourceForeground": "#FB7B5C90",
+        "gitDecoration.stageDeletedResourceForeground": "#D8465790",
+        "gitDecoration.untrackedResourceForeground": "#0CD47A",
+        "gitDecoration.ignoredResourceForeground": "#DDE0E450",
+        "gitDecoration.conflictingResourceForeground": "#FFEA70",
+        "gitDecoration.submoduleResourceForeground": "#9470FF50",
 
         // Settings editor colors
         "settings.headerForeground": "#8B8AE5",
@@ -870,6 +873,8 @@
         ],
         "settings": { "foreground": "#FF5EA0" }
     },
+
+
 
     // ---------------------------------------------------------------------------
     // Atomic tangerine : #FFA185

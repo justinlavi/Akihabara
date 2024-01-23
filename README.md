@@ -2,7 +2,7 @@
 
 ## A modern, vibrant color theme inspired by the streets of Akihabara
 
-Akihabara is a dark Visual Studio Code color theme featuring bright, vibrant text colors and dark, blue-toned background with pleasing indigo highlights.
+Akihabara is a dark color theme featuring bright, vibrant text colors against a deep, blue-toned background with pleasing indigo highlights.
 I was inspired to create this theme after using the fantastic [Shubya][shibuya] theme by [jeroen-meijer][jeroen-meijer].
 
 ## Color palette
