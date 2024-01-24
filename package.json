@@ -2,31 +2,33 @@
     "name": "akihabara",
     "displayName": "Akihabara",
     "description": "A modern, vibrant color theme with rich syntax highlighting, inspired by the streets of Akihabara",
-    "icon": "assets/icon.png",
-    "galleryBanner": {
-        "color": "#0c0d12",
-        "theme": "dark"
-    },
     "version": "2.1.5",
     "publisher": "justin-lavi",
+    "license": "MIT",
     "author": {
         "name": "Justin Lavi",
         "email": "rumtankard@gmail.com"
     },
-    "bugs": {
-        "url": "https://github.com/justinlavi/Akihabara",
-        "email": "rumtankard@gmail.com"
-    },
-    "license": "MIT",
+    "icon": "assets/icon.png",
+    "homepage": "https://github.com/justinlavi/Akihabara",
     "repository": {
         "type": "git",
         "url": "https://github.com/justinlavi/Akihabara"
+    },
+    "bugs": {
+        "url": "https://github.com/justinlavi/Akihabara/issues",
+        "email": "rumtankard@gmail.com"
+    },
+    "galleryBanner": {
+        "color": "#0C0D12",
+        "theme": "dark"
     },
     "engines": {
         "vscode": "^1.85.0"
     },
     "categories": [
-        "Themes"
+        "Themes",
+        "Other"
     ],
     "contributes": {
         "themes": [
@@ -41,12 +43,14 @@
         "akihabara",
         "city",
         "colorful",
+        "clean",
         "cyber",
         "cyberpunk",
         "dark",
         "dark theme",
         "highlighting",
         "japan",
+        "modern",
         "neon",
         "night",
         "shibuya",
