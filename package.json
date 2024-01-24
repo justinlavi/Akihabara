@@ -1,7 +1,7 @@
 {
     "name": "akihabara",
     "displayName": "Akihabara",
-    "description": "A color theme with rich syntax highlighting. Inspiried by the Shibuya theme",
+    "description": "A modern, vibrant color theme with rich syntax highlighting, inspired by the streets of Akihabara",
     "icon": "assets/icon.png",
     "galleryBanner": {
         "color": "#0c0d12",
@@ -39,16 +39,19 @@
     },
     "keywords": [
         "akihabara",
-        "akihabara theme",
-        "tokyo",
-        "tokyo theme",
-        "shibuya",
-        "shibuya theme",
-        "japan",
-        "japan theme",
+        "city",
+        "colorful",
+        "cyber",
+        "cyberpunk",
         "dark",
         "dark theme",
-        "cyber",
-        "cyberpunk"
+        "highlighting",
+        "japan",
+        "neon",
+        "night",
+        "shibuya",
+        "tokyo",
+        "syntax",
+        "syntax highlighting"
     ]
 }

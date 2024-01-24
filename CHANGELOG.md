@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "akihabara" extension will be documented in this file.
+## [2.1.5] - 2024-01-23
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- Updated README and package info, started tracking changelog

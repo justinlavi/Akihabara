@@ -1,9 +1,8 @@
 # 秋葉原 ・ Akihabara
 
-## A modern, vibrant color theme inspired by the streets of Akihabara
+## A modern, vibrant color theme with rich syntax highlighting, inspired by the streets of Akihabara
 
-Akihabara is a dark color theme featuring bright, vibrant text colors against a deep, blue-toned background with pleasing indigo highlights.
-I was inspired to create this theme after using the fantastic [Shubya][shibuya] theme by [jeroen-meijer][jeroen-meijer].
+Akihabara is a dark Visual Studio Code color theme featuring bright, vibrant text colors and a dark blue-toned background.
 
 ## Color palette
 
@@ -49,6 +48,9 @@ I was inspired to create this theme after using the fantastic [Shubya][shibuya] 
 
 ## Notes
 The recommended font is [Fira Code Retina][fira_code] with ligatures enabled.
+
+## See also:
+I was inspired to create this theme after using the fantastic [Shubya][shibuya] theme by [jeroen-meijer][jeroen-meijer].
 
 [shibuya]: https://marketplace.visualstudio.com/items?itemName=jeroen-meijer.shibuya&ssr=false#overview 'Shibuya VS Code extension page'
 [jeroen-meijer]: https://github.com/jeroen-meijer/shibuya 'Shibuya author "jeroen-meijer" GitHub profile page'
