@@ -1,5 +1,10 @@
 # Change Log
 
+## [2.1.7] - 2024-01-23
+
+- Cleaned up README
+- Updated icon
+
 ## [2.1.6] - 2024-01-23
 
 - Reduced the brightness the current line highlight
