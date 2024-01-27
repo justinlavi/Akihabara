@@ -611,7 +611,7 @@
         "gitDecoration.untrackedResourceForeground": "#0CD47A",
         "gitDecoration.ignoredResourceForeground": "#DDE0E450",
         "gitDecoration.conflictingResourceForeground": "#FFEA70",
-        "gitDecoration.submoduleResourceForeground": "#9470FF50",
+        "gitDecoration.submoduleResourceForeground": "#9365CC50",
 
         // Settings editor colors
         "settings.headerForeground": "#8B8AE5",
@@ -759,7 +759,7 @@
     },
     "tokenColors": [
     // ---------------------------------------------------------------------------
-    // Medium slate blue: #9470FF
+    // Amethyst: #9365CC
     {
         "scope": [
             // Generic
@@ -790,7 +790,7 @@
             "variable.other.normal.shell",
 
         ],
-        "settings": { "foreground": "#9470FF" }
+        "settings": { "foreground": "#9365CC" }
     },
 
     // ---------------------------------------------------------------------------

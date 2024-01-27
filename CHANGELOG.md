@@ -1,5 +1,9 @@
 # Change Log
 
+## [2.1.8] - 2024-01-26
+
+- Reduced the intensity of the purple color used for member variables
+
 ## [2.1.7] - 2024-01-23
 
 - Cleaned up README
