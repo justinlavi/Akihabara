@@ -8,10 +8,10 @@
 |----------------------------|----------------------------|
 | Keywords                   | ![#FF1778](https://via.placeholder.com/15/FF1778/000000?text=+) `#FF1778 - Rose`
 | Globals/Namespaces         | ![#0BC1BB](https://via.placeholder.com/15/0BC1BB/000000?text=+) `#0BC1BB - Robin egg blue`
-| Types/Classes/Templates    | ![#00E0B7](https://via.placeholder.com/15/00E0B7/000000?text=+) `#00E0B7 - Turquoise`
+| Types/Classes/Templates    | ![#00DAB1](https://via.placeholder.com/15/00DAB1/000000?text=+) `#00DAB1 - Turquoise`
 | Functions                  | ![#0AB1FF](https://via.placeholder.com/15/0AB1FF/000000?text=+) `#0AB1FF - Picton blue`
 | Arguments/Parameters       | ![#FFF3A8](https://via.placeholder.com/15/FFF3A8/000000?text=+) `#FFF3A8 - Vanilla`
-| Member Variables           | ![#9365CC](https://via.placeholder.com/15/9365CC/000000?text=+) `#9365CC - Amethyst`
+| Member Variables/Events    | ![#9365CC](https://via.placeholder.com/15/9365CC/000000?text=+) `#9365CC - Amethyst`
 | Local Variables            | ![#DDE0E4](https://via.placeholder.com/15/DDE0E4/000000?text=+) `#DDE0E4 - Platinum`
 | Enumerators                | ![#FF5EA0](https://via.placeholder.com/15/FF5EA0/000000?text=+) `#FF5EA0 - Cyclamen`
 | Constants/Numeric          | ![#FFA185](https://via.placeholder.com/15/FFA185/000000?text=+) `#FFA185 - Atomic tangerine`

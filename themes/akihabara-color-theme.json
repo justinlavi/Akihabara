@@ -759,42 +759,7 @@
     },
     "tokenColors": [
     // ---------------------------------------------------------------------------
-    // Amethyst: #9365CC
-    {
-        "scope": [
-            // Generic
-            "variable.other.object",
-
-            // C++
-            "variable.other.property.cpp",
-            "variable.other.property.cli.cpp",
-            "variable.other.property.static.cpp",
-            "meta.preprocessor.macro.cpp",
-
-            // C#
-            "variable.other.readwrite.cs",
-            "entity.name.variable.property.cs",
-            "entity.name.variable.field.cs",
-            "variable.other.object.cs",
-            "variable.other.object.property.cs",
-
-            // Java
-            "variable.other.object.property.java",
-
-            // Python
-            "meta.attribute.python",
-            "support.variable.magic.python",
-
-            // Shell
-            "variable.other.assignment.shell",
-            "variable.other.normal.shell",
-
-        ],
-        "settings": { "foreground": "#9365CC" }
-    },
-
-    // ---------------------------------------------------------------------------
-    // Rose: #FF1778
+    // Keywords - Rose: #FF1778
     {
         "scope": [
             // Generic
@@ -848,92 +813,35 @@
     },
 
     // ---------------------------------------------------------------------------
-    // Cyclamen: FF5EA0
+    // Globals/Namespaces - Robin egg blue: #0BC1BB
     {
         "scope": [
             // Generic
-            "entity.name.type.enum",
-            "variable.other.enummember",
+            "entity.name.namespace",
+            "variable.other.global",
 
             // C++
-            "variable.other.enummember.cpp",
+            "entity.name.namespace.cpp",
+            "variable.other.global.cpp",
 
             // C#
-            "entity.name.variable.enum-member",
+            "entity.name.type.namespace",
 
             // Java
-            "constant.other.enum.java",
-
-            // Python
-            "constant.other.caps.python",
-
-            // CMake
-            "storage.source.cmake",
-
-        ],
-        "settings": { "foreground": "#FF5EA0" }
-    },
-
-
-
-    // ---------------------------------------------------------------------------
-    // Atomic tangerine : #FFA185
-    {
-        "scope": [
-            // Generic
-            "constant",
-            "constant.numeric",
-            "constant.character",
-            "constant.character.escape",
-            "constant.language",
-            "constant.other",
-
-            // C++
-            "variable.other.event.cpp",
-            "entity.name.type.class.value.cpp",
-
-            // C#
-            // "entity.name.variable.event",
-
-            // Java
-
-            // Python
-
-            // Shell
-            // "constant.other.option",
-
-        ],
-        "settings": { "foreground": "#FFA185" }
-    },
-
-    // ---------------------------------------------------------------------------
-    // Vanilla: #FFF3A8
-    {
-        "scope": [
-            // Generic
-            "variable.parameter",
-
-            // C++
-            "variable.parameter.cpp",
-
-            // C#
-            "entity.name.variable.parameter.cs",
-
-            // Java
+            "variable.other.object.java",
 
             // Python
 
             // CMake
 
             // Shell
-            "string.unquoted.argument.shell",
 
         ],
-        "settings": { "foreground": "#FFF3A8" }
+        "settings": { "foreground": "#0BC1BB" }
     },
 
     // ---------------------------------------------------------------------------
-    // Turquise: #00E0B7
+    // Types/Classes/Templates - Turquoise: #00DAB1
     {
         "scope": [
             // Generic
@@ -970,39 +878,11 @@
             // Shell
 
         ],
-        "settings": { "foreground": "#00E0B7" }
+        "settings": { "foreground": "#00DAB1" }
     },
 
     // ---------------------------------------------------------------------------
-    // Robin egg blue: #0BC1BB
-    {
-        "scope": [
-            // Generic
-            "entity.name.namespace",
-            "variable.other.global",
-
-            // C++
-            "entity.name.namespace.cpp",
-            "variable.other.global.cpp",
-
-            // C#
-            "entity.name.type.namespace",
-
-            // Java
-            "variable.other.object.java",
-
-            // Python
-
-            // CMake
-
-            // Shell
-
-        ],
-        "settings": { "foreground": "#0BC1BB" }
-    },
-
-    // ---------------------------------------------------------------------------
-    // Picton blue: #0AB1FF
+    // Functions - Picton blue: #0AB1FF
     {
         "scope": [
             // Generic
@@ -1054,36 +934,70 @@
     },
 
     // ---------------------------------------------------------------------------
-    // Delft blue: #404064
+    // Arguments/Parameters - Vanilla: #FFF3A8
     {
         "scope": [
-            "comment",
-            "comment.line",
-            "comment.line.double-slash",
-            "comment.line.double-dash",
-            "comment.line.number-sign",
-            "comment.line.percentage",
-            "comment.line.character",
-            "comment.block",
-            "comment.block.documentation",
+            // Generic
+            "variable.parameter",
 
             // C++
+            "variable.parameter.cpp",
+
+            // C#
+            "entity.name.variable.parameter.cs",
 
             // Java
 
             // Python
 
             // CMake
-            "comment.source.cmake",
 
-            // Doxygen
-            "storage.type.class.doxygen",
+            // Shell
+            "string.unquoted.argument.shell",
+
         ],
-        "settings": { "foreground": "#404064" }
+        "settings": { "foreground": "#FFF4AF" }
+    },
+
+
+    // ---------------------------------------------------------------------------
+    // Member Variables - Amethyst: #9365CC
+    {
+        "scope": [
+            // Generic
+            "variable.other.object",
+
+            // C++
+            "variable.other.property.cpp",
+            "variable.other.property.cli.cpp",
+            "variable.other.property.static.cpp",
+            "meta.preprocessor.macro.cpp",
+
+            // C#
+            "variable.other.readwrite.cs",
+            "entity.name.variable.property.cs",
+            "entity.name.variable.field.cs",
+            "variable.other.object.cs",
+            "variable.other.object.property.cs",
+            "entity.name.variable.event.cs",
+
+            // Java
+            "variable.other.object.property.java",
+
+            // Python
+            "meta.attribute.python",
+            "support.variable.magic.python",
+
+            // Shell
+            "variable.other.assignment.shell",
+            "variable.other.normal.shell",
+
+        ],
+        "settings": { "foreground": "#9365CC" }
     },
 
     // ---------------------------------------------------------------------------
-    // Platinum: #DDE0E4
+    // Local Variables - Platinum: #DDE0E4
     {
         "scope": [
             // Generic
@@ -1113,12 +1027,46 @@
     },
 
     // ---------------------------------------------------------------------------
-    // Payne's gary: #5B6071
+    // Enumerators - Cyclamen: FF5EA0
     {
         "scope": [
             // Generic
+            "entity.name.type.enum",
+            "variable.other.enummember",
 
             // C++
+            "variable.other.enummember.cpp",
+
+            // C#
+            "entity.name.variable.enum-member",
+
+            // Java
+            "constant.other.enum.java",
+
+            // Python
+            "constant.other.caps.python",
+
+            // CMake
+            "storage.source.cmake",
+
+        ],
+        "settings": { "foreground": "#FF5EA0" }
+    },
+
+    // ---------------------------------------------------------------------------
+    // Constants/Numeric - Atomic tangerine : #FFA185
+    {
+        "scope": [
+            // Generic
+            "constant",
+            "constant.numeric",
+            "constant.character",
+            "constant.character.escape",
+            "constant.language",
+            "constant.other",
+
+            // C++
+            "entity.name.type.class.value.cpp",
 
             // C#
 
@@ -1126,16 +1074,15 @@
 
             // Python
 
-            // CMake
-
             // Shell
+            // "constant.other.option",
 
         ],
-        "settings": { "foreground": "#5B6071" }
+        "settings": { "foreground": "#FFA185" }
     },
 
     // ---------------------------------------------------------------------------
-    // Ultra violet: #5E6482
+    // Strings/Punctuation - Ultra violet: #5E6482
     {
         "scope": [
             // Generic
@@ -1183,7 +1130,57 @@
             "punctuation.definition.string",
         ],
         "settings": { "foreground": "#5E6482" }
-    }
+    },
 
+    // ---------------------------------------------------------------------------
+    // Comments - Delft blue: #404064
+    {
+        "scope": [
+            "comment",
+            "comment.line",
+            "comment.line.double-slash",
+            "comment.line.double-dash",
+            "comment.line.number-sign",
+            "comment.line.percentage",
+            "comment.line.character",
+            "comment.block",
+            "comment.block.documentation",
+
+            // C++
+
+            // Java
+
+            // Python
+
+            // CMake
+            "comment.source.cmake",
+
+            // Doxygen
+            "storage.type.class.doxygen",
+        ],
+        "settings": { "foreground": "#404064" }
+    },
+
+    // ---------------------------------------------------------------------------
+    // Disabled - Payne's gary: #5B6071
+    {
+        "scope": [
+            // Generic
+
+            // C++
+
+            // C#
+
+            // Java
+
+            // Python
+
+            // CMake
+
+            // Shell
+
+        ],
+        "settings": { "foreground": "#5B6071" }
+    }
   ]
 }

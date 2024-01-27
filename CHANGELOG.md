@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.1.9] - 2024-01-26
+
+- Slightly reduced the intensity of the green color (turquoise) used for types/classes/templates
+- Slightly reduced the intensity of the yellow color (vanilla) color used for arguments/parameters
+- Added sytax highlighting for C# events. They will be colored purple (Amethyst) similar to member variables
+- Updated README
+
 ## [2.1.8] - 2024-01-26
 
 - Reduced the intensity of the purple color used for member variables
