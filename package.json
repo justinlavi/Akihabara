@@ -1,7 +1,7 @@
 {
     "name": "akihabara",
     "displayName": "Akihabara",
-    "description": "A modern, vibrant color theme with rich syntax highlighting, inspired by the streets of Akihabara",
+    "description": "A modern theme with rich syntax highlighting, inspired by the night streets of Akihabara.",
     "version": "2.1.9",
     "publisher": "justin-lavi",
     "license": "MIT",
@@ -50,9 +50,11 @@
         "dark theme",
         "highlighting",
         "japan",
+        "magenta",
         "modern",
         "neon",
         "night",
+        "pastel",
         "shibuya",
         "tokyo"
     ]

@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.0.0] - 2024-01-31
+
+- Reworked almost all of the main colors to go for a more consistent, darker color pallete with cooler highlights.
+- Reworked all of the main UI colors from indigo to magenta
+
 ## [2.1.9] - 2024-01-26
 
 - Slightly reduced the intensity of the green color (turquoise) used for types/classes/templates
