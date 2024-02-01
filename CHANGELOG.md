@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.0.2] - 2024-01-31
+
+- Fixed a formatting error in the README file
+
 ## [3.0.1] - 2024-01-31
 
 - Cleaned up & improved readability of the README file
