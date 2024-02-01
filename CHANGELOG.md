@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.0.1] - 2024-01-31
+
+- Cleaned up & improved readability of the README file
+
 ## [3.0.0] - 2024-01-31
 
 - Reworked almost all of the main colors to go for a more consistent, darker color pallete with cooler highlights.

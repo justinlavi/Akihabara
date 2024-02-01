@@ -757,6 +757,7 @@
         // "scm.historyItemStatisticsBorder": "#DDE0E4",
         // "scm.historyItemSelectedStatisticsBorder": "#DDE0E4",
     },
+
     "tokenColors": [
     // ---------------------------------------------------------------------------
     // Keywords - Mulberry: #CB3A90
@@ -767,12 +768,9 @@
             "keyword.control",
             "keyword.operator",
             "keyword.other",
-
             "storage.type",
             "storage.modifier",
-
             "variable.language",
-
             "entity.source",
 
             // C++
@@ -1135,6 +1133,7 @@
     // Comments - Space Cadet: #31314D
     {
         "scope": [
+            // Generic
             "comment",
             "comment.line",
             "comment.line.double-slash",
@@ -1146,6 +1145,8 @@
             "comment.block.documentation",
 
             // C++
+
+            // C#
 
             // Java
 
