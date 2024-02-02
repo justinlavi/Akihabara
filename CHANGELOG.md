@@ -1,5 +1,11 @@
 # Change Log
 
+## [3.0.3] - 2024-02-01
+
+- Slightly reduced the intensity of the white color used for local variables & UI text
+- Changed the editorHoverWidget's text to gray so that its less distracting
+- Various readability improvements for editor UI elements
+
 ## [3.0.2] - 2024-01-31
 
 - Fixed a formatting error in the README file

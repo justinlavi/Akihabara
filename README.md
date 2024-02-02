@@ -14,7 +14,7 @@
 | Functions                  | ![#2F9EE7](https://via.placeholder.com/15/2F9EE7/000000?text=+) #2F9EE7 - Celestial Blue |
 | Arguments/Parameters       | ![#D4A6CF](https://via.placeholder.com/15/D4A6CF/000000?text=+) #D4A6CF - Lilac |
 | Member Variables/Events    | ![#8C4DB4](https://via.placeholder.com/15/8C4DB4/000000?text=+) #8C4DB4 - Purpureus |
-| Local Variables            | ![#DDE0E4](https://via.placeholder.com/15/DDE0E4/000000?text=+) #DDE0E4 - Platinum |
+| Local Variables            | ![#D8DBE0](https://via.placeholder.com/15/D8DBE0/000000?text=+) #D8DBE0 - Platinum |
 | Enumerators                | ![#18B7C9](https://via.placeholder.com/15/18B7C9/000000?text=+) #18B7C9 - Moonstone |
 | Constants/Numeric          | ![#DF4863](https://via.placeholder.com/15/DF4863/000000?text=+) #DF4863 - Cerise |
 | Strings/Punctuation        | ![#636689](https://via.placeholder.com/15/636689/000000?text=+) #636689 - Ultra Violet |
