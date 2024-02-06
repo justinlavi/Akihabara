@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.1.0] - 2024-02-06
+
+- Reworked the main UI colors. Switched from a magenta palette to a blue-green (verdigris) color pallete.
+- Darkened the main background to improve UI and code clarity.
+
 ## [3.0.3] - 2024-02-01
 
 - Slightly reduced the intensity of the white color used for local variables & UI text
