@@ -17,8 +17,8 @@
 | Local Variables            | ![#D8DBE0](https://via.placeholder.com/15/D8DBE0/000000?text=+) #D8DBE0 - Platinum |
 | Enumerators                | ![#18B7C9](https://via.placeholder.com/15/18B7C9/000000?text=+) #18B7C9 - Moonstone |
 | Constants/Numeric          | ![#DF4863](https://via.placeholder.com/15/DF4863/000000?text=+) #DF4863 - Cerise |
-| Strings/Punctuation        | ![#455A73](https://via.placeholder.com/15/455A73/000000?text=+) #455A73 - Payne's Gray |
-| Comments                   | ![#31314D](https://via.placeholder.com/15/31314D/000000?text=+) #31314D - Space Cadet |
+| Strings/Punctuation        | ![#406178](https://via.placeholder.com/15/406178/000000?text=+) #406178 - Payne's Gray |
+| Comments                   | ![#253747](https://via.placeholder.com/15/253747/000000?text=+) #253747 - Charcoal |
 
 ### App color pallete:
 

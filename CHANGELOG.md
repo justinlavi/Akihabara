@@ -1,5 +1,13 @@
 # Change Log
 
+## [3.2.0] - 2024-02-07
+
+- Sligtly increased the brightness of the green-black color used for borders & background elements
+- Removed the purple tint from the UI text color
+- Removed the purple tint from the code comment color
+- Removed the purple tint from the breadcrumb highlight color
+- Updated placeholder text color to match UI color scheme
+
 ## [3.1.0] - 2024-02-06
 
 - Reworked the main UI colors. Switched from a magenta palette to a blue-green (verdigris) color pallete.
