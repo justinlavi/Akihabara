@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.3.0] - 2024-02-13
+
+- Sligtly lightened the black color used for backgrounds to increase visibility
+- Sligtly changed the hue of the purple color used for memeber variables to improve color pallete blending
+
 ## [3.2.0] - 2024-02-07
 
 - Sligtly increased the brightness of the green-black color used for borders & background elements

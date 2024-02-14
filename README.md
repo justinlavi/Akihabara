@@ -13,7 +13,7 @@
 | Types/Classes/Templates    | ![#01DBB5](https://via.placeholder.com/15/01DBB5/000000?text=+) #01DBB5 - Turquoise |
 | Functions                  | ![#2F9EE7](https://via.placeholder.com/15/2F9EE7/000000?text=+) #2F9EE7 - Celestial Blue |
 | Arguments/Parameters       | ![#D4A6CF](https://via.placeholder.com/15/D4A6CF/000000?text=+) #D4A6CF - Lilac |
-| Member Variables/Events    | ![#8C4DB4](https://via.placeholder.com/15/8C4DB4/000000?text=+) #8C4DB4 - Purpureus |
+| Member Variables/Events    | ![#8753B8](https://via.placeholder.com/15/8753B8/000000?text=+) #8753B8 - Royal Purple |
 | Local Variables            | ![#D8DBE0](https://via.placeholder.com/15/D8DBE0/000000?text=+) #D8DBE0 - Platinum |
 | Enumerators                | ![#18B7C9](https://via.placeholder.com/15/18B7C9/000000?text=+) #18B7C9 - Moonstone |
 | Constants/Numeric          | ![#DF4863](https://via.placeholder.com/15/DF4863/000000?text=+) #DF4863 - Cerise |
@@ -24,7 +24,7 @@
 
 | Category              | Color Code                 |
 |-----------------------|----------------------------|
-| Backgrounds           | ![#08090C](https://via.placeholder.com/15/08090C/000000?text=+) #08090C - Black |
+| Backgrounds           | ![#0A0B0F](https://via.placeholder.com/15/0A0B0F/000000?text=+) #0A0B0F - Night |
 | Dark Borders          | ![#071B20](https://via.placeholder.com/15/071B20/000000?text=+) #071B20 - Rich Black |
 | Light Borders         | ![#074045](https://via.placeholder.com/15/074045/000000?text=+) #074045 - Midnight Green |
 | Links                 | ![#07656A](https://via.placeholder.com/15/07656A/000000?text=+) #07656A - Carribean Current |
