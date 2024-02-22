@@ -805,6 +805,9 @@
             // Java
             // "keyword.other.package.java",
 
+            // Javascript
+            "punctuation.definition.markdown",
+
             // Python
 
             // CMake
@@ -812,6 +815,9 @@
 
             // Shell
             "support.function.builtin.shell",
+
+            // yml
+            "punctuation.definition.block.sequence.item.yaml",
         ],
         "settings": { "foreground": "#CB3A90" }
     },
@@ -866,12 +872,14 @@
             "punctuation.section.angle-brackets.end.template.definition.cpp",
             "storage.type.template.argument.typename.cpp",
 
-
             // C#
             "punctuation.definition.typeparameters.begin.cs",
             "punctuation.definition.typeparameters.end.cs",
 
             // Java
+
+            // Javascript
+            "storage.type.js",
 
             // Python
             "support.type.python",
@@ -881,6 +889,11 @@
 
             // Shell
 
+            // JSON
+            "support.type.property-name.json",
+
+            // yml
+            "entity.name.tag.yaml",
         ],
         "settings": { "foreground": "#01DBB5" }
     },
@@ -918,6 +931,10 @@
 
             // Java
 
+            // Javascript
+            "storage.type.function.js",
+            "entity.name.function.js",
+
             // Python
             "meta.function-call.generic.python",
             "punctuation.definition.arguments.begin.python",
@@ -951,6 +968,9 @@
             "entity.name.variable.parameter.cs",
 
             // Java
+
+            // Javascript
+            "variable.parameter.js",
 
             // Python
 
@@ -994,7 +1014,6 @@
             // Shell
             "variable.other.assignment.shell",
             "variable.other.normal.shell",
-
         ],
         "settings": { "foreground": "#8753B8" }
     },
@@ -1015,6 +1034,9 @@
             // Java
             "variable.other.definition.java",
 
+            // Javascript
+            "variable.other.readwrite.js",
+
             // Python
             "source.python",
 
@@ -1025,6 +1047,7 @@
             "source.shell",
             "meta.scope.group.shell",
 
+            // JSON
         ],
         "settings": { "foreground": "#D8DBE0" }
     },
@@ -1080,6 +1103,9 @@
             // Shell
             // "constant.other.option",
 
+            // JSON
+            "constant.numeric.json"
+
         ],
         "settings": { "foreground": "#DF4863" }
     },
@@ -1125,12 +1151,18 @@
 
             // Python
 
+            // JSON
+            "string.quoted.double.json",
+
             // CMake
             "string.source.cmake",
 
             // Shell
             "string.quoted.double.shell",
             "punctuation.definition.string",
+
+            // yml
+            "string.unquoted.plain.out.yaml",
         ],
         "settings": { "foreground": "#406178" }
     },
@@ -1187,6 +1219,115 @@
 
         ],
         "settings": { "foreground": "#525666" }
-    }
+    },
+
+    // ---------------------------------------------------------------------------
+    // Markdown (.md)
+    {
+        "scope": [
+            "meta.paragraph.markdown",
+        ],
+        "settings": {
+            "foreground": "#406178",
+        },
+    },
+    {
+        "scope": [
+            "markup.inline.raw.string.markdown",
+            "punctuation.definition.raw.markdown",
+        ],
+        "settings": {
+            "foreground": "#D8DBE0",
+        },
+    },
+    {
+        "scope": [
+            "entity.name.section.markdown",
+            "punctuation.definition.heading.markdown"
+        ],
+        "settings": {
+            "foreground": "#09B6BF",
+            "fontStyle": "bold"
+        },
+    },
+    {
+        "scope": [
+            "punctuation.definition.heading.markdown"
+        ],
+        "settings": {
+            "foreground": "#CB3A90",
+            "fontStyle": "bold"
+        },
+    },
+    {
+        "scope": [
+            "markup.bold.markdown",
+            "punctuation.definition.bold.markdown"
+        ],
+        "settings": {
+            "foreground": "#406178",
+            "fontStyle": "bold"
+        },
+    },
+    {
+        "scope": [
+            "markup.italic.markdown",
+            "punctuation.definition.italic.markdown"
+        ],
+        "settings": {
+            "foreground": "#406178",
+            "fontStyle": "italic"
+        },
+    },
+    {
+        "scope": [
+            "markup.strikethrough.markdown",
+            "punctuation.definition.strikethrough.markdown"
+        ],
+        "settings": {
+            "foreground": "#406178",
+            "fontStyle": "strikethrough"
+        },
+    },
+    {
+        "scope": [
+            "punctuation.definition.list.begin.markdown",
+        ],
+        "settings": {
+            "foreground": "#CB3A90",
+        },
+    },
+    {
+        "scope": [
+            "string.other.link.title.markdown",
+            "string.other.link.description.markdown",
+            "punctuation.definition.link.description.begin.markdown",
+            "punctuation.definition.link.description.end.markdown",
+            "punctuation.definition.link.title.begin.markdown",
+            "punctuation.definition.link.title.end.markdown",
+        ],
+        "settings": {
+            "foreground": "#8753B8",
+        },
+    },
+    {
+        "scope": [
+            "markup.underline.link.markdown",
+            "markup.underline.link.image.markdown",
+            "punctuation.definition.metadata.markdown",
+            "punctuation.definition.metadata.markdown",
+        ],
+        "settings": {
+            "foreground": "#2F9EE7",
+        },
+    },
+    {
+        "scope": [
+            "punctuation.definition.quote.begin.markdown",
+        ],
+        "settings": {
+            "foreground": "#CB3A90",
+        },
+    },
   ]
 }

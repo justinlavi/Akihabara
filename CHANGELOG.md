@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.4.0] - 2024-02-13
+
+- Added basic syntax highlighting support for JSON, Javascript, Markdown, and yml files
+
 ## [3.3.0] - 2024-02-13
 
 - Sligtly lightened the black color used for backgrounds to increase visibility
