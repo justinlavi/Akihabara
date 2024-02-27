@@ -15,7 +15,7 @@
 | Arguments/Parameters       | ![#D4A6CF](https://via.placeholder.com/15/D4A6CF/000000?text=+) #D4A6CF - Lilac |
 | Member Variables/Events    | ![#8753B8](https://via.placeholder.com/15/8753B8/000000?text=+) #8753B8 - Royal Purple |
 | Local Variables            | ![#D8DBE0](https://via.placeholder.com/15/D8DBE0/000000?text=+) #D8DBE0 - Platinum |
-| Enumerators                | ![#18B7C9](https://via.placeholder.com/15/18B7C9/000000?text=+) #18B7C9 - Moonstone |
+| Enumerators                | ![#1BB6CF](https://via.placeholder.com/15/1BB6CF/000000?text=+) #1BB6CF - Moonstone |
 | Constants/Numeric          | ![#DF4863](https://via.placeholder.com/15/DF4863/000000?text=+) #DF4863 - Cerise |
 | Strings/Punctuation        | ![#406178](https://via.placeholder.com/15/406178/000000?text=+) #406178 - Payne's Gray |
 | Comments                   | ![#253747](https://via.placeholder.com/15/253747/000000?text=+) #253747 - Charcoal |
@@ -24,7 +24,7 @@
 
 | Category              | Color Code                 |
 |-----------------------|----------------------------|
-| Backgrounds           | ![#0A0B0F](https://via.placeholder.com/15/0A0B0F/000000?text=+) #0A0B0F - Night |
+| Backgrounds           | ![#0E050C](https://via.placeholder.com/15/0E050C/000000?text=+) #0E050C - Licorice |
 | Dark Borders          | ![#071B20](https://via.placeholder.com/15/071B20/000000?text=+) #071B20 - Rich Black |
 | Light Borders         | ![#074045](https://via.placeholder.com/15/074045/000000?text=+) #074045 - Midnight Green |
 | Links                 | ![#07656A](https://via.placeholder.com/15/07656A/000000?text=+) #07656A - Carribean Current |

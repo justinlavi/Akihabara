@@ -1,6 +1,11 @@
 # Change Log
 
-## [3.4.0] - 2024-02-13
+## [3.5.0] - 2024-02-25
+
+- Adjusted the background colors to a dark licorice (deep red-black) for enhanced contrast with the main verdigris (blue-green) highlights, fostering a more 'cyberpunk' atmosphere to the theme
+- Slightly adjusted color of enums to be more blue as to not clash with the namespace color
+
+## [3.4.0] - 2024-02-22
 
 - Added basic syntax highlighting support for JSON, Javascript, Markdown, and yml files
 
