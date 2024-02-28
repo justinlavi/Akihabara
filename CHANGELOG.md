@@ -1,5 +1,13 @@
 # Change Log
 
+## [3.6.0] - 2024-02-27
+
+- Updated operators (=, ==, +, =>, etc.) to a Mulberry hue for enhanced clarity
+- Refined the Verdigris color for app highlights and namespaces, adjusting it to be slightly greener and more akin to true Verdigris
+- Fixed certain JavaScript keywords being displayed in an incorrect color
+- Enhanced clarity of the Git submodules & ignored items indicators in the file tree
+- Increased the brightness of gray colors slightly for better readability of text and strings
+
 ## [3.5.0] - 2024-02-25
 
 - Adjusted the background colors to a dark licorice (deep red-black) for enhanced contrast with the main verdigris (blue-green) highlights, fostering a more 'cyberpunk' atmosphere to the theme
