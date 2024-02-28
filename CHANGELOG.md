@@ -1,6 +1,6 @@
 # Change Log
 
-## [3.7.1] - 2024-02-28
+## [3.7.2] - 2024-02-28
 
 - Fixed example image not showing up in README properly
 

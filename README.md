@@ -4,7 +4,7 @@
 
 #### The palette is crafted for visual comfort while ensuring elements are easily distinguishable:
 
-<img src="assets/example.PNG" alt="Akihabara-Theme-Example" width="750px" />
+![Theme Example - C++](./assets/example.PNG)
 
 ### Code color palette
 
