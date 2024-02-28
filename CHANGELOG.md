@@ -1,5 +1,10 @@
 # Change Log
 
+## [3.7.0] - 2024-02-28
+
+- Updated pointer-access specifier (->) to Mulberry color
+- Added example screenshot of the theme to the README
+
 ## [3.6.0] - 2024-02-27
 
 - Updated operators (=, ==, +, =>, etc.) to a Mulberry hue for enhanced clarity

@@ -796,6 +796,10 @@
             "entity.name.operator.custom-literal.cpp",
             "entity.name.operator.custom-literal.number.cpp",
             "entity.name.operator.custom-literal.string.cpp",
+            "entity.name.function.operator.member.cpp",
+            "punctuation.separator.pointer-access.cpp",
+            // "punctuation.separator.scope-resolution.cpp",
+            // "punctuation.separator.scope-resolution.parameter.cpp",
 
             // C#
             "storage.modifier.public.cs",
@@ -1139,7 +1143,7 @@
             // C++
             "entity.name.function.operator",
             "punctuation.separator",
-            "punctuation.section",
+
             "punctuation.definition.string.begin",
             "punctuation.definition.string.end",
             "constant.character.escape",

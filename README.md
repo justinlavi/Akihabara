@@ -1,10 +1,12 @@
 # 秋葉原 ・ Akihabara: A Night in Tokyo Theme
 
-## Immerse yourself in the serene hues of Akihabara's night streets. This theme showcases a cool, calm color palette against a backdrop of deep black tones, complemented by satisfying blue-green highlights.
+## Immerse yourself in the serene hues of Akihabara's night streets. This theme features a cool and soothing color scheme set against deep black backgrounds, highlighted by pleasing blue-green accents.
+
+#### The palette is crafted for visual comfort while ensuring elements are easily distinguishable:
+
+![Akihabara-Theme-Example](./assets/example.PNG)
 
 ### Code color palette
-
-#### This palette is designed to be easy on the eyes, yet distinct enough to make different elements stand out:
 
 | Category                   | Color Code                 |
 |----------------------------|----------------------------|
