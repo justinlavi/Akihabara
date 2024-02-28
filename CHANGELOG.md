@@ -1,5 +1,9 @@
 # Change Log
 
+## [3.7.1] - 2024-02-28
+
+- Fixed example image not showing up in README properly
+
 ## [3.7.0] - 2024-02-28
 
 - Updated pointer-access specifier (->) to Mulberry color
