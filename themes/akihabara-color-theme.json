@@ -770,6 +770,8 @@
     {
         "scope": [
             // Generic
+            "constant.character.escape",
+            "entity.source",
             "keyword",
             "keyword.control",
             "keyword.control.default",
@@ -785,19 +787,18 @@
             "keyword.other",
             "keyword.other.delete",
             "keyword.other.using.directive",
-            "storage.type",
             "storage.modifier",
-            "variable.language",
-            "entity.source",
             "storage.modifier.specifier.const",
+            "storage.type",
+            "variable.language",
 
             // C++
-            "keyword.operator.new.cpp",
+            "entity.name.function.operator.cpp",
+            "entity.name.function.operator.member.cpp",
+            "punctuation.separator.pointer-access.cpp",
             "entity.name.operator.custom-literal.cpp",
             "entity.name.operator.custom-literal.number.cpp",
             "entity.name.operator.custom-literal.string.cpp",
-            "entity.name.function.operator.member.cpp",
-            "punctuation.separator.pointer-access.cpp",
             // "punctuation.separator.scope-resolution.cpp",
             // "punctuation.separator.scope-resolution.parameter.cpp",
 
@@ -920,7 +921,6 @@
             "entity.name.type.class.generic.cpp",
             "entity.name.function.preprocessor.cpp",
             "entity.name.function.member.cpp",
-            "entity.name.function.operator.cpp",
             "entity.name.function.member.static.cpp",
 
             "keyword.other.operator.overload",
@@ -969,6 +969,7 @@
     {
         "scope": [
             // Generic
+            "constant.other.placeholder",
             "variable.parameter",
 
             // C++
@@ -1100,7 +1101,6 @@
             "constant",
             "constant.numeric",
             "constant.character",
-            "constant.character.escape",
             "constant.language",
             "constant.other",
 
@@ -1146,8 +1146,6 @@
 
             "punctuation.definition.string.begin",
             "punctuation.definition.string.end",
-            "constant.character.escape",
-            "constant.other.placeholder",
 
             // C#
             "punctuation.curlybrace.open.cs",

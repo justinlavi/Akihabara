@@ -1,5 +1,12 @@
 # Change Log
 
+## [3.8.0] - 2024-02-29
+
+- Fixed color for nested OR calls (ex. | enum  | enum | enum)
+- Fixed color for !=
+- Added color for placeholder/argument variables in printf statements (%s, &d, etc.)
+- Added color for escape character in printf statements (\n)
+
 ## [3.7.3] - 2024-02-29
 
 - Embedding screenshot in README
