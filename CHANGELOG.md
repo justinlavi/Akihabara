@@ -1,8 +1,8 @@
 # Change Log
 
-## [3.7.2] - 2024-02-28
+## [3.7.3] - 2024-02-29
 
-- Fixed example image not showing up in README properly
+- Embedding screenshot in README
 
 ## [3.7.0] - 2024-02-28
 

@@ -4,7 +4,7 @@
 
 #### The palette is crafted for visual comfort while ensuring elements are easily distinguishable:
 
-![Theme Example - C++](./assets/example.PNG)
+![C++ Example](assets/example.png)
 
 ### Code color palette
 
