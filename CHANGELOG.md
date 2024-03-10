@@ -1,5 +1,18 @@
 # Change Log
 
+## [4.0.0] - 2024-03-9
+
+- Adjusted the keyword color to be darker for improved palette consistency
+- Aligned punctuation colors () {} , ; "" ::  with the color of keywords
+- Changed string colors to dark violet for better distinction from the gray used for comments
+- Tweaked the color for backgrounds to be slightly brighter and redder for better contrast
+- Tweaked local variable color to be slightly whiter
+- Tweaked the color of arguments and parameters to be slightly pinker
+- Tweaked constant color to a more fuchsia shade to better integrate with the overall palette
+- Tweaked app text color to be brighter and greener for increased visibility
+- Resolved numerous syntax highlighting issues across various programming languages
+- Added updated example image & cleaned up README
+
 ## [3.8.0] - 2024-02-29
 
 - Fixed color for nested OR calls (ex. | enum  | enum | enum)
