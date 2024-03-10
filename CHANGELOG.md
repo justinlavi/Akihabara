@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.0.1] - 2024-03-9
+
+- Fixed some incorrect syntax highlighting in Markdown (.md)
+
 ## [4.0.0] - 2024-03-9
 
 - Adjusted the keyword color to be darker for improved palette consistency
