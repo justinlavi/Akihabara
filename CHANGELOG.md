@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.1.0] - 2025-10-16
+
+- Updated application colors to be more consistent and readable. Based it off of "Bearded Theme Void" for a new starting point.
+
 ## [4.0.1] - 2024-03-9
 
 - Fixed some incorrect syntax highlighting in Markdown (.md)

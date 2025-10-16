@@ -35,7 +35,8 @@
             {
                 "label": "Akihabara",
                 "uiTheme": "vs-dark",
-                "path": "./themes/akihabara-color-theme.json"
+                "path": "./themes/akihabara-color-theme.json",
+                "semanticHighlighting": true
             }
         ]
     },
