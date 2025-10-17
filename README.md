@@ -131,29 +131,29 @@ If you enjoy using the Akihabara theme, please consider leaving a review on the 
 ## Credits
 * [**Semantic Rainbow**](https://thertzlor.github.io/semantic-rainbow/) - The color design for this theme was heavily inspired by thertzlor's "Semantic Rainbow" design philosophy.
 
-[red]: ./assets/chips/red.svg
-[red_local]: ./assets/chips/red_local.svg
-[red_const]: ./assets/chips/red_const.svg
-[red_member]: ./assets/chips/red_member.svg
+[red]: ./assets/chips/red.png
+[red_local]: ./assets/chips/red_local.png
+[red_const]: ./assets/chips/red_const.png
+[red_member]: ./assets/chips/red_member.png
 
-[purple]: ./assets/chips/purple.svg
-[purple_keyword]: ./assets/chips/purple_keyword.svg
+[purple]: ./assets/chips/purple.png
+[purple_keyword]: ./assets/chips/purple_keyword.png
 
-[blue]: ./assets/chips/blue.svg
-[blue_function]: ./assets/chips/blue_function.svg
-[blue_method]: ./assets/chips/blue_method.svg
+[blue]: ./assets/chips/blue.png
+[blue_function]: ./assets/chips/blue_function.png
+[blue_method]: ./assets/chips/blue_method.png
 
-[green]: ./assets/chips/green.svg
-[green_namespace]: ./assets/chips/green_namespace.svg
+[green]: ./assets/chips/green.png
+[green_namespace]: ./assets/chips/green_namespace.png
 
-[teal]: ./assets/chips/teal.svg
-[teal_class]: ./assets/chips/teal_class.svg
+[teal]: ./assets/chips/teal.png
+[teal_class]: ./assets/chips/teal_class.png
 
-[yellow]: ./assets/chips/yellow.svg
-[yellow_type]: ./assets/chips/yellow_type.svg
-[yellow_literal]: ./assets/chips/yellow_literal.svg
+[yellow]: ./assets/chips/yellow.png
+[yellow_type]: ./assets/chips/yellow_type.png
+[yellow_literal]: ./assets/chips/yellow_literal.png
 
-[orange]: ./assets/chips/orange.svg
-[orange_parameter]: ./assets/chips/orange_parameter.svg
+[orange]: ./assets/chips/orange.png
+[orange_parameter]: ./assets/chips/orange_parameter.png
 
-[gray_comment]: ./assets/chips/gray_comment.svg
+[gray_comment]: ./assets/chips/gray_comment.png

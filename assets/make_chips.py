@@ -1,5 +1,6 @@
 import os
 import shutil
+from PIL import Image, ImageDraw  # pip install pillow
 
 # filename -> hex (no #)
 PALETTE = {
@@ -37,21 +38,11 @@ PALETTE = {
     "gray_comment":     "5E5379",  # Ultra Violet
 }
 
-SVG_TMPL = """\
-<svg xmlns="http://www.w3.org/2000/svg" width="{s}" height="{s}" viewBox="0 0 {s} {s}">
-  <rect x="0" y="0" width="{s}" height="{s}" rx="{r}" ry="{r}" fill="#{hex}"/>
-</svg>
-"""
-
-SIZE = 14
-RADIUS = 2
+SIZE   = 14   # px
+RADIUS = 2    # px
 OUT_DIR = "assets/chips"
 
 def wipe_dir(path: str) -> None:
-    """
-    Hard wipe the directory contents (files & subdirs) safely.
-    Only removes contents of `path`, not the parent dir.
-    """
     os.makedirs(path, exist_ok=True)
     for entry in os.listdir(path):
         p = os.path.join(path, entry)
@@ -63,17 +54,24 @@ def wipe_dir(path: str) -> None:
         except Exception as e:
             print(f"! Skipped '{p}': {e}")
 
+def make_chip_png(hexcode: str, path: str, size: int = SIZE, radius: int = RADIUS) -> None:
+    """Create a rounded-rectangle PNG chip with transparent background."""
+    img = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(img)
+    # Pillow's rounded_rectangle supports radius param
+    draw.rounded_rectangle(
+        [0, 0, size, size],
+        radius=radius,
+        fill=tuple(int(hexcode[i:i+2], 16) for i in (0, 2, 4)) + (255,)
+    )
+    img.save(path, format="PNG")
+
 def main():
-    # Wipe existing chips
     wipe_dir(OUT_DIR)
-
-    # Recreate fresh chips
     for name, hexcode in PALETTE.items():
-        path = os.path.join(OUT_DIR, f"{name}.svg")
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(SVG_TMPL.format(s=SIZE, r=RADIUS, hex=hexcode))
-
-    print(f"✓ Wrote {len(PALETTE)} chips to {OUT_DIR}/ (directory wiped beforehand)")
+        png_path = os.path.join(OUT_DIR, f"{name}.png")
+        make_chip_png(hexcode, png_path)
+    print(f"✓ Wrote {len(PALETTE)} PNG chips to {OUT_DIR}/ (directory wiped beforehand)")
 
 if __name__ == "__main__":
     main()
