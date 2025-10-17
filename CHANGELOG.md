@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.7.0] - 2025-10-17
+
+- Added more c++ & doxygen scopes
+
 ## [4.2.0] - 2025-10-17
 
 - Updated colors to have a consistent design philosophy. Heavily inspired by the Semantic Rainbow theme by thertzlor.

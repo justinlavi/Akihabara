@@ -656,6 +656,7 @@
                 "support.other.attribute",
                 "storage.type.enum",
                 "storage.type.union",
+                "variable.other.unknown.public",
                 "entity.name.type.enum",
                 "entity.name.type.union",
                 "storage.type.template",
@@ -850,10 +851,14 @@
                 "comment.line.double-slash",
                 "comment.block",
                 "comment.block.documentation",
-                "punctuation.definition.comment.cpp"
+                "punctuation.definition.comment.cpp",
+                "storage.type.class.doxygen",
+                "punctuation.definition.comment.documentation",
+                "comment.line.double-slash",
+                "punctuation.definition.comment",
             ],
             "settings": {
-                "foreground": "#5E5379"
+                "foreground": "#030303"
             }
         },
         // ---------------------------------------------------------------------------
