@@ -852,13 +852,21 @@
                 "comment.block",
                 "comment.block.documentation",
                 "punctuation.definition.comment.cpp",
-                "storage.type.class.doxygen",
                 "punctuation.definition.comment.documentation",
                 "comment.line.double-slash",
                 "punctuation.definition.comment",
             ],
             "settings": {
-                "foreground": "#030303"
+                "foreground": "#3C354E"
+            }
+        },
+        {
+            "name": "Doxygen",
+            "scope": [
+                "storage.type.class.doxygen",
+            ],
+            "settings": {
+                "foreground": "#5A4684"
             }
         },
         // ---------------------------------------------------------------------------

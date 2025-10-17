@@ -16,6 +16,9 @@
 #include <cassert>
 #include <cmath>
 
+/// @file graphics_2d.cpp
+/// @brief A 2D graphics utility to test comprehensive C++ syntax and semantic highlighting
+
 // Macro definitions for configuration and debugging
 #define SCALE_FACTOR(x) ((x) * 2.0) // Scales coordinates
 #define LOG_MESSAGE std::cout << "Debug: Operation completed\n"
@@ -183,6 +186,8 @@ T scale_value(T value, double factor)
 {
     return static_cast<T>(value * factor);
 }
+
+    /// @brief Opens a source file/stream
 
 // Function to transform coordinates
 void transform(Point2D &point, const double offset, Point2D *output)

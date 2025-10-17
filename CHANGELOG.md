@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.7.1] - 2025-10-17
+
+- Fixed comment colors
+
 ## [4.7.0] - 2025-10-17
 
 - Added more c++ & doxygen scopes
