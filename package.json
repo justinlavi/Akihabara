@@ -2,24 +2,24 @@
     "name": "akihabara",
     "displayName": "Akihabara",
     "description": "Immerse yourself in the tranquil colors of Akihabara's night streets",
-    "version": "4.3.0",
+    "version": "4.4.0",
     "publisher": "justin-lavi",
     "license": "MIT",
     "author": {
         "name": "Justin Lavi",
         "email": "rumtankard@gmail.com"
     },
-  "files": [
-    "package.json",
-    "README.md",
-    "CHANGELOG.md",
-    "themes/**",
-    "assets/chips/**"
-  ],
-  "icon": "assets/icon.png",
-  "homepage": "https://github.com/justinlavi/Akihabara",
-  "repository": {
-      "type": "git",
+    "files": [
+        "package.json",
+        "README.md",
+        "CHANGELOG.md",
+        "themes/**",
+        "assets/chips/**"
+    ],
+    "icon": "assets/icon.png",
+    "homepage": "https://github.com/justinlavi/Akihabara",
+    "repository": {
+        "type": "git",
         "url": "https://github.com/justinlavi/Akihabara"
     },
     "bugs": {
