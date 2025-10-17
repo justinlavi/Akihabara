@@ -1,5 +1,10 @@
 # Change Log
 
+## [4.2.0] - 2025-10-17
+
+- Updated colors to have a consistent design philosophy. Heavily inspired by the Semantic Rainbow theme by thertzlor.
+- Added a generator script for color chips, so that colors may properly show up on github/marketplace.
+
 ## [4.1.0] - 2025-10-16
 
 - Updated application colors to be more consistent and readable. Based it off of "Bearded Theme Void" for a new starting point.

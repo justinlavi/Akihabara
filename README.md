@@ -1,46 +1,122 @@
-# 秋葉原 ・ Akihabara: A Night in Tokyo Theme
+# 秋葉原 ・ Akihabara: A Night in Tokyo — Code Color Theory
 
-## Immerse yourself in the tranquil colors of Akihabara's night streets. This theme presents a refreshing, cool color scheme set against deep black backgrounds, complemented by pleasing blue-green accents.
+Akihabara at night is neon over black: vivid signals guiding calm movement.
+This theme applies that idea to code. Each **programming concept** gets a **base color family** (red / purple / blue / green→teal / yellow / orange), and each **subtype** gets a precise hue so your eyes learn “what kind of thing” before reading the word.
 
-#### Designed with visual comfort first, different syntaxes are easily distinguishable without strain.
+- **Values** ![chip][red] feel alive and immediate.
+- **Control** ![chip][purple] is signage—clear routes, no cargo.
+- **Actions** ![chip][blue] are the waterworks—they reshape.
+- **State & Structure** ![chip][green] ![chip][teal] are where things live and organize.
+- **Definitions ![chip][yellow] & Literals ![chip][yellow_literal]**  set shape and fixed atoms.
+- **Parameters** ![chip][orange] are the in-flight handoff between value and state.
 
-![C++ Example](assets/example.png)
+Designed for **long sessions**: high contrast on black, saturated but disciplined accents, and systematic semantics so large codebases feel navigable, not noisy.
 
-### Code color palette:
-| Category                   | Color Code                 |
-|----------------------------|----------------------------|
-| Keywords,Punctuation       | ![#BD3686](https://via.placeholder.com/15/BD3686/000000?text=+) #BD3686 - Fandango |
-| Globals,Namespaces         | ![#02BBBB](https://via.placeholder.com/15/02BBBB/000000?text=+) #02BBBB - Verdigris |
-| Types,Classes,Templates    | ![#01DBB5](https://via.placeholder.com/15/01DBB5/000000?text=+) #01DBB5 - Turquoise |
-| Functions                  | ![#2F9EE7](https://via.placeholder.com/15/2F9EE7/000000?text=+) #2F9EE7 - Celestial Blue |
-| Arguments,Parameters       | ![#D999D2](https://via.placeholder.com/15/D999D2/000000?text=+) #D999D2 - Plum |
-| Member Variables,Events    | ![#8753B8](https://via.placeholder.com/15/8753B8/000000?text=+) #8753B8 - Royal Purple |
-| Local Variables            | ![#DADDE1](https://via.placeholder.com/15/DADDE1/000000?text=+) #DADDE1 - Platinum |
-| Enumerators                | ![#1BB6CF](https://via.placeholder.com/15/1BB6CF/000000?text=+) #1BB6CF - Moonstone |
-| Constants,Numeric          | ![#D34271](https://via.placeholder.com/15/D34271/000000?text=+) #D34271 - Fuchsia Rose |
-| Strings                    | ![#6C517B](https://via.placeholder.com/15/6C517B/000000?text=+) #6C517B - Chinese Violet |
-| Comments                   | ![#253747](https://via.placeholder.com/15/253747/000000?text=+) #253747 - Charcoal |
+---
 
-### App color pallete:
-| Category              | Color Code                 |
-|-----------------------|----------------------------|
-| Backgrounds           | ![#10060E](https://via.placeholder.com/15/10060E/000000?text=+) #10060E - Licorice |
-| Dark Borders          | ![#071B20](https://via.placeholder.com/15/071B20/000000?text=+) #071B20 - Rich Black |
-| Light Borders         | ![#074045](https://via.placeholder.com/15/074045/000000?text=+) #074045 - Midnight Green |
-| Links                 | ![#07656A](https://via.placeholder.com/15/07656A/000000?text=+) #07656A - Carribean Current |
-| Text                  | ![#356E81](https://via.placeholder.com/15/356E81/000000?text=+) #356E81 - Payne's Gray |
-| Highlights,Buttons    | ![#02BBBB](https://via.placeholder.com/15/02BBBB/000000?text=+) #02BBBB - Verdigris |
-| Success               | ![#0CD47A](https://via.placeholder.com/15/0CD47A/000000?text=+) #0CD47A - Emerald |
-| Error                 | ![#D84657](https://via.placeholder.com/15/D84657/000000?text=+) #D84657 - Amaranth |
-| Warning               | ![#FFEA70](https://via.placeholder.com/15/FFEA70/000000?text=+) #FFEA70 - Maize |
-| Modification          | ![#FB7B5C](https://via.placeholder.com/15/FB7B5C/000000?text=+) #FB7B5C - Burnt sienna |
-| Info                  | ![#70B0FF](https://via.placeholder.com/15/70B0FF/000000?text=+) #70B0FF - Ruddy Blue |
-| Disabled              | ![#525666](https://via.placeholder.com/15/525666/000000?text=+) #525666 - Davy's Gray |
+# Color Design Philosophy
+
+---
+
+# Values / Information
+
+**Idea & Rationale:** Values are the code’s **lifeblood** ![chip][red]. Keep the family in **red** ![chip][red] for “this is data.” Use brightness/hue to encode role; this stays distinct from **Actions** ![chip][blue] and **Control** ![chip][purple].
+
+## Subtypes & Color Behavior
+
+| Subtype           | Hex     | Name              | Metaphor                         | Role Cue                        |
+|-------------------|---------|-------------------|----------------------------------|----------------------------------|
+| Constants         | #A8304B | Amaranth Purple   | **Old blood** ![chip][red_const] | Immutable foundation             |
+| Local Variables   | #D53D5C | Cerise            | **Fresh blood** ![chip][red_local] | Scoped, short-lived carriers     |
+| Member Variables  | #904483 | Plum              | **Royal blood** ![chip][red_member] | Object identity & enduring state |
+
+---
+
+# Keywords / Flow Control
+
+**Idea & Rationale:** Flow words are **traffic signals** ![chip][purple]—they **route** ![chip][purple] data; they don’t carry it. One confident **purple** ![chip][purple] unifies control and stays distinct from **Values** ![chip][red] and **Actions** ![chip][blue].
+
+## Subtypes & Color Behavior
+
+| Category                 | Examples                                                                 | Hex     | Name                              | Role Cue                 |
+|--------------------------|--------------------------------------------------------------------------|---------|-----------------------------------|--------------------------|
+| Branching                | `if`, `else`, `switch`, `case`, `default`                                | #7757BA | Royal Purple ![chip][purple_keyword] | Choose a path            |
+| Looping                  | `for`, `while`, `do`                                                     | #7757BA | Royal Purple ![chip][purple_keyword] | Repeat a path            |
+| Transfer                 | `return`, `break`, `continue`                                            | #7757BA | Royal Purple ![chip][purple_keyword] | Exit / skip / handoff    |
+| Exceptions               | `try`, `catch`, `throw`                                                  | #7757BA | Royal Purple ![chip][purple_keyword] | Detour on error          |
+| Misc Flow                | `goto`, labels                                                           | #7757BA | Royal Purple ![chip][purple_keyword] | Unstructured jump        |
+| **Access / Declarations**| `public`, `protected`, `private`, `class`, `struct`, `namespace`, `interface`, `enum`, `union`, `template`, `using namespace`, scope `::` | #7757BA | Royal Purple ![chip][purple_keyword] | Visibility & structure   |
+
+---
+
+# Action / Transformation
+
+**Idea & Rationale:** Callables are the system’s **waterworks** ![chip][blue]—they move and reshape data. Keep **blue** ![chip][blue] for “this acts,” with a greener tilt when action is state-aware. This separates **Actions** ![chip][blue] from **Values** ![chip][red] and **Control** ![chip][purple].
+
+## Subtypes & Color Behavior
+
+| Subtype   | Hex     | Name                         | Role Cue                          |
+|-----------|---------|------------------------------|-----------------------------------|
+| Function  | #00A5E0 | **Picton Blue** ![chip][blue_function] | Free-flowing transform            |
+| Method    | #06A3C6 | **Pacific Cyan** ![chip][blue_method]  | Transform shaped by object/state  |
+
+---
+
+# State / Storage
+
+**Idea & Rationale:** These are the **containers and grounds**—where information **lives** ![chip][green] or is **organized** ![chip][teal]. Use **green → teal** ![chip][green] ![chip][teal] to signal **state & structure**, distinct from **Values** ![chip][red] and **Control** ![chip][purple].
+
+## Subtypes & Color Behavior
+
+| Subtype    | Hex     | Name                | Role Cue                                   |
+|------------|---------|---------------------|--------------------------------------------|
+| Namespace  | #15A284 | **Zomp** ![chip][green_namespace] | Organizational scope (non-instantiable)    |
+| Class      | #0EA3A5 | **Light Sea Green** ![chip][teal_class] | Owns/organizes object state                |
+
+---
+
+# Definitions / Primitives
+
+# Definitions / Primitives
+
+**Idea & Rationale:** These mark **shape** ![chip][yellow] and **literal atoms** ![chip][yellow_literal]. Keep **types** in pure yellow for “what it *is*,” and render **literals** in yellow-green for “the concrete value here,” distinct from **Values** ![chip][red], **Actions** ![chip][blue], and **Control** ![chip][purple].
+**Note:** **Numbers** lean slightly green ![chip][yellow_literal] to emphasize their **discrete state**; **enum values** remain literal (yellow-green), while **enum type names** stay with the type family (pure yellow).
+
+## Subtypes & Color Behavior
+
+| Subtype          | Hex     | Name                | Role Cue                                     |
+|------------------|---------|---------------------|----------------------------------------------|
+| Types (incl. enum/class names) | #FAE57B | **Jasmine** ![chip][yellow_type]   | Type identifiers & fundamental types         |
+| Strings          | #88C480 | **Pistachio** ![chip][yellow_literal] | Text literals (fixed in source)              |
+| Booleans         | #88C480 | **Pistachio** ![chip][yellow_literal] | `true` / `false` literals                    |
+| Numbers          | #88C480 | **Pistachio** ![chip][yellow_literal] | Discrete, fixed numeric state                |
+| Enums (values)   | #88C480 | **Pistachio** ![chip][yellow_literal] | Enumerator values (enum *types* use Jasmine) |
+
+---
+
+# Parameters
+
+**Idea & Rationale:** Parameters are **handoff points** ![chip][orange]—between **Values** ![chip][red] and **State** ![chip][green]. Use **orange** ![chip][orange] to signal “in-flight input/output” without conflating with locals or fields.
+
+## Subtypes & Color Behavior
+
+| Subtype   | Hex     | Name             | Role Cue                                      |
+|-----------|---------|------------------|-----------------------------------------------|
+| Parameter | #F47357 | **Burnt Sienna** ![chip][orange_parameter] | Per-call inputs/outputs, bound to scope       |
+
+---
+
+
+# Comments
+
+- #3C354E Ultra Violet ![chip][gray_comment]
+
+---
+
+<!-- ![C++ Example](assets/example.png)-->
 
 ## Recommendations
-For an optimal experience with Akihabara, I suggest using [Fira Code Retina][fira_code_link] with with font ligatures enabled. Its crisp appearance and excellent readability complement the theme's design.
-
-To maintain focus on this theme's specific bracket & parenthesis colors, consider **disabling** *'Bracket Pair Colorization'* in your VSCode settings.
+For best results, use **Fira Code Retina** (ligatures on). Consider **disabling Bracket Pair Colorization** to let Akihabara’s bracket/paren accents carry the structure.
 
 ## Feedback
 If you encounter any issues, or have suggestions for improving this theme, please open an [issue][issue_link] on GitHub.
@@ -51,3 +127,33 @@ If you enjoy using the Akihabara theme, please consider leaving a review on the 
 [fira_code_link]: https://github.com/tonsky/FiraCode 'FiraCode GitHub repository page'
 [issue_link]: https://github.com/justinlavi/Akihabara/issues 'GitHub issue page'
 [marketplace_link]: https://marketplace.visualstudio.com/items?itemName=justin-lavi.akihabara 'Visual Studio Marketplace page'
+
+## Credits
+* [**Semantic Rainbow**](https://thertzlor.github.io/semantic-rainbow/) - The color design for this theme was heavily inspired by thertzlor's "Semantic Rainbow" design philosophy.
+
+[red]: ./assets/chips/red.svg
+[red_local]: ./assets/chips/red_local.svg
+[red_const]: ./assets/chips/red_const.svg
+[red_member]: ./assets/chips/red_member.svg
+
+[purple]: ./assets/chips/purple.svg
+[purple_keyword]: ./assets/chips/purple_keyword.svg
+
+[blue]: ./assets/chips/blue.svg
+[blue_function]: ./assets/chips/blue_function.svg
+[blue_method]: ./assets/chips/blue_method.svg
+
+[green]: ./assets/chips/green.svg
+[green_namespace]: ./assets/chips/green_namespace.svg
+
+[teal]: ./assets/chips/teal.svg
+[teal_class]: ./assets/chips/teal_class.svg
+
+[yellow]: ./assets/chips/yellow.svg
+[yellow_type]: ./assets/chips/yellow_type.svg
+[yellow_literal]: ./assets/chips/yellow_literal.svg
+
+[orange]: ./assets/chips/orange.svg
+[orange_parameter]: ./assets/chips/orange_parameter.svg
+
+[gray_comment]: ./assets/chips/gray_comment.svg
