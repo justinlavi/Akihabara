@@ -9,10 +9,17 @@
         "name": "Justin Lavi",
         "email": "rumtankard@gmail.com"
     },
-    "icon": "assets/icon.png",
-    "homepage": "https://github.com/justinlavi/Akihabara",
-    "repository": {
-        "type": "git",
+  "files": [
+    "package.json",
+    "README.md",
+    "CHANGELOG.md",
+    "themes/**",
+    "assets/chips/**"
+  ],
+  "icon": "assets/icon.png",
+  "homepage": "https://github.com/justinlavi/Akihabara",
+  "repository": {
+      "type": "git",
         "url": "https://github.com/justinlavi/Akihabara"
     },
     "bugs": {
