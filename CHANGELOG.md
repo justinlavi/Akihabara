@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.8.2] - 2025-10-20
+
+- Reworked README, added example screenshots, muted some colors (yellow, orange), improved consistencey of palette
+
 ## [4.7.1] - 2025-10-17
 
 - Fixed comment colors

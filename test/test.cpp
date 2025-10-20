@@ -102,6 +102,17 @@ struct Point2D
     }
 };
 
+// This is test code that is "commented out" to check syntax highlighting.
+
+void test_point2d()
+{
+    /*
+    Point2D p{3.0, 4.0};
+    double dist = p.distance_to_origin();
+    std::cout << "Distance to origin: " << dist << "\n";
+    */
+}
+
 // Union for pixel data
 union PixelData
 {

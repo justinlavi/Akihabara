@@ -2,7 +2,7 @@
     "name": "akihabara",
     "displayName": "Akihabara",
     "description": "Immerse yourself in the tranquil colors of Akihabara's night streets",
-    "version": "4.8.1",
+    "version": "4.8.2",
     "publisher": "justin-lavi",
     "license": "MIT",
     "author": {
@@ -63,7 +63,10 @@
         "neon",
         "night",
         "pastel",
-        "shibuya",
+        "readable",
+        "semantics",
+        "syntax",
+        "theory",
         "tokyo"
     ]
 }

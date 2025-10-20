@@ -531,60 +531,11 @@
     //     "stringLiteral":      "#DADDE1"
     // },
     "tokenColors": [
-        // ---------------------------------------------------------------------------
-        // Values / Information
+        // =======================================================================
+        // 1) KEYWORDS / CONTROL 🟪 — shapes & gates execution
+        // =======================================================================
         {
-            "name": "Local Variables",
-            "scope": [
-                "variable.other.local",
-                "variable.other",
-                "variable.other.global",
-                "variable.language.this"
-            ],
-            "settings": {
-                "foreground": "#D53D5C"
-            }
-        },
-        {
-            "name": "Member Variables",
-            "scope": [
-                "variable.other.member",
-                "variable.other.property",
-                "variable.other.field",
-                "variable.other.property.static",
-                "variable.other.property.cli",
-                "variable.other.event",
-
-                // JSON
-                "support.type.property-name.json"
-            ],
-            "settings": {
-                "foreground": "#904483"
-            }
-        },
-        {
-            "name": "Constants",
-            "scope": [
-                "variable.other.constant",
-                "constant.other",
-                "constant.language",
-                "support.constant",
-                "entity.name.constant",
-                "constant.language.null",
-                "constant.language.nullptr",
-                "variable.other.readonly",
-                "variable.readonly",
-                "variable.other.member.readonly",
-                "variable.other.constant.property",
-            ],
-            "settings": {
-                "foreground": "#A8304B"
-            }
-        },
-        // ---------------------------------------------------------------------------
-        // Keywords / Flow Control
-        {
-            "name": "Branching (if/else/switch/case)",
+            "name": "@Branching (if/else/switch/case)",
             "scope": [
                 "keyword.control.if.cpp",
                 "keyword.control.else",
@@ -599,7 +550,7 @@
             }
         },
         {
-            "name": "Looping (for/while/do)",
+            "name": "@Looping (for/while/do)",
             "scope": [
                 "keyword.control.loop",
                 "keyword.control.for",
@@ -611,7 +562,7 @@
             }
         },
         {
-            "name": "Transfer (return/break/continue)",
+            "name": "@Transfer (return/break/continue)",
             "scope": [
                 "keyword.control.return",
                 "keyword.control.break",
@@ -623,7 +574,7 @@
             }
         },
         {
-            "name": "Exceptions (try/catch/throw)",
+            "name": "@Exceptions (try/catch/throw)",
             "scope": [
                 "keyword.control.exception",
                 "keyword.control.try",
@@ -635,7 +586,7 @@
             }
         },
         {
-            "name": "Misc Flow (goto / labels)",
+            "name": "@Misc Flow (goto / labels)",
             "scope": [
                 "keyword.control.goto",
                 "entity.name.label"
@@ -645,7 +596,7 @@
             }
         },
         {
-            "name": "Access Modifiers (public/protected/private)",
+            "name": "@Access / Declarations (public/protected/private, class/struct/namespace, ::, etc.)",
             "scope": [
                 "storage.type.modifier.access",
                 "storage.type.class",
@@ -661,7 +612,6 @@
                 "entity.name.type.union",
                 "storage.type.template",
                 "punctuation.separator.scope-resolution",
-
                 // CMake
                 "support.type.targetProperty.cmake"
             ],
@@ -669,10 +619,118 @@
                 "foreground": "#7757BA"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Action / Transformation
+        // =======================================================================
+        // 2) DEFINITIONS / PRIMITIVES 🟨 — identity & fixed atoms
+        // =======================================================================
         {
-            "name": "Functions (declarations & calls)",
+            "name": "@Types (identifiers & primitive type keywords)",
+            "scope": [
+                "storage.type",
+                "storage.type.primitive",
+                "support.type",
+                "keyword.other.typedef",
+                "keyword.other.default"
+            ],
+            "settings": {
+                "foreground": "#CBBB52"
+            }
+        },
+        {
+            "name": "@Booleans (true/false)",
+            "scope": [
+                "constant.language.boolean",
+                "constant.language.true",
+                "constant.language.false"
+            ],
+            "settings": {
+                "foreground": "#CBBB52"
+            }
+        },
+        {
+            "name": "@Strings (all kinds)",
+            "scope": [
+                "string.quoted.double",
+                "string.quoted.single",
+                "string.quoted.raw",
+                "string.quoted.other",
+                "string.quoted.other.literal",
+                "string.template",
+                "string.quoted.double.include",
+                "constant.character",
+                "entity.name.operator.custom-literal.string",
+                "punctuation.definition.string.begin",
+                "punctuation.definition.string.end",
+                "constant.character.escape",
+                "keyword.other.unit.suffix",
+                // CMake
+                "string.quoted.double-slash.cmake"
+            ],
+            "settings": {
+                "foreground": "#70AF6B"
+            }
+        },
+        {
+            "name": "@Numbers",
+            "scope": [
+                "constant.numeric",
+                "constant.numeric.integer",
+                "constant.numeric.float",
+                "constant.character.numeric",
+                "entity.name.operator.custom-literal.number",
+                "keyword.other.unit.hexadecimal"
+            ],
+            "settings": {
+                "foreground": "#70AF6B"
+            }
+        },
+        {
+            "name": "@Enums — Enumerator Values",
+            "scope": [
+                "variable.other.enummember",
+                "constant.other.enum"
+            ],
+            "settings": {
+                "foreground": "#70AF6B"
+            }
+        },
+        // =======================================================================
+        // 3) STATE / STORAGE 🟢/🧊 — containers & ownership
+        // =======================================================================
+        {
+            "name": "@Namespace",
+            "scope": [
+                "entity.name.namespace",
+                "support.other.namespace"
+            ],
+            "settings": {
+                "foreground": "#15A284"
+            }
+        },
+        {
+            "name": "@Classes / Structs / Interfaces",
+            "scope": [
+                "entity.name.type",
+                "entity.name.type.class",
+                "entity.name.type.struct",
+                "meta.class-identifier",
+                "support.class",
+                "entity.name.type.class.templated",
+                "entity.name.type.class.generic",
+                "entity.name.type.class.reference",
+                "entity.name.type.class.value",
+                "entity.name.type.interface",
+                "entity.other.inherited-class",
+                "string.quoted.other.lt-gt.include.cpp"
+            ],
+            "settings": {
+                "foreground": "#0EA3A5"
+            }
+        },
+        // =======================================================================
+        // 4) ACTION / TRANSFORMATION 🔵 — motion & change
+        // =======================================================================
+        {
+            "name": "@Functions (declarations & calls)",
             "scope": [
                 "entity.name.function",
                 "meta.function-call",
@@ -705,7 +763,7 @@
             }
         },
         {
-            "name": "Methods (member calls)",
+            "name": "@Methods (member calls)",
             "scope": [
                 "meta.method-call",
                 "entity.name.function.member",
@@ -722,129 +780,75 @@
                 "foreground": "#06A3C6"
             }
         },
-        // ---------------------------------------------------------------------------
-        // State / Storage
+        // =======================================================================
+        // 5) PARAMETERS 🟧 — handoff points
+        // =======================================================================
         {
-            "name": "Namespace",
-            "scope": [
-                "entity.name.namespace",
-                "support.other.namespace",
-            ],
-            "settings": {
-                "foreground": "#15A284"
-            }
-        },
-        {
-            "name": "Classes / Structs / Interfaces",
-            "scope": [
-                "entity.name.type",
-                "entity.name.type.class",
-                "entity.name.type.struct",
-                "meta.class-identifier",
-                "support.class",
-                "entity.name.type.class.templated",
-                "entity.name.type.class.generic",
-                "entity.name.type.class.reference",
-                "entity.name.type.class.value",
-                "entity.name.type.interface",
-                "entity.other.inherited-class",
-                "string.quoted.other.lt-gt.include.cpp"
-            ],
-            "settings": {
-                "foreground": "#0EA3A5"
-            }
-        },
-        // ---------------------------------------------------------------------------
-        // Definitions / Primitives (Yellow -> Green)
-        {
-            "name": "Types (identifiers & primitive type keywords)",
-            "scope": [
-                "storage.type",
-                "storage.type.primitive",
-                "support.type",
-                "keyword.other.typedef",
-                "keyword.other.default",
-            ],
-            "settings": {
-                "foreground": "#FAE57B"
-            }
-        },
-        {
-            "name": "Strings (all kinds)",
-            "scope": [
-                "string.quoted.double",
-                "string.quoted.single",
-                "string.quoted.raw",
-                "string.quoted.other",
-                "string.quoted.other.literal",
-                "string.template",
-                "string.quoted.double.include",
-                "constant.character",
-                "entity.name.operator.custom-literal.string",
-                "punctuation.definition.string.begin",
-                "punctuation.definition.string.end",
-                "constant.character.escape",
-                "keyword.other.unit.suffix",
-
-                // CMake
-                "string.quoted.double-slash.cmake"
-            ],
-            "settings": {
-                "foreground": "#88C480"
-            }
-        },
-        {
-            "name": "Booleans (true/false)",
-            "scope": [
-                "constant.language.boolean",
-                "constant.language.true",
-                "constant.language.false"
-            ],
-            "settings": {
-                "foreground": "#FAE57B"
-            }
-        },
-        {
-            "name": "Numbers",
-            "scope": [
-                "constant.numeric",
-                "constant.numeric.integer",
-                "constant.numeric.float",
-                "constant.character.numeric",
-                "entity.name.operator.custom-literal.number",
-                "keyword.other.unit.hexadecimal",
-            ],
-            "settings": {
-                "foreground": "#88C480"
-            }
-        },
-        {
-            "name": "Enums — Enumerator Values",
-            "scope": [
-                "variable.other.enummember",
-                "constant.other.enum"
-            ],
-            "settings": {
-                "foreground": "#88C480"
-            }
-        },
-        // ---------------------------------------------------------------------------
-        // Parameters
-        {
-            "name": "Parameters",
+            "name": "@Parameters",
             "scope": [
                 "variable.parameter",
                 "entity.name.variable.parameter",
-                "meta.parameter",
+                "meta.parameter"
             ],
             "settings": {
-                "foreground": "#F47357"
+                "foreground": "#D77F43"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Comments
+        // =======================================================================
+        // 6) VALUES / INFORMATION 🔴 — payload
+        // =======================================================================
         {
-            "name": "Comments",
+            "name": "@Local Variables",
+            "scope": [
+                "variable.other.local",
+                "variable.other",
+                "variable.other.global",
+                "variable.language.this"
+            ],
+            "settings": {
+                "foreground": "#D53D5C"
+            }
+        },
+        {
+            "name": "@Member Variables",
+            "scope": [
+                "variable.other.member",
+                "variable.other.property",
+                "variable.other.field",
+                "variable.other.property.static",
+                "variable.other.property.cli",
+                "variable.other.event",
+                // JSON
+                "support.type.property-name.json"
+            ],
+            "settings": {
+                "foreground": "#A7447C"
+            }
+        },
+        {
+            "name": "@Constants",
+            "scope": [
+                "variable.other.constant",
+                "constant.other",
+                "constant.language",
+                "support.constant",
+                "entity.name.constant",
+                "constant.language.null",
+                "constant.language.nullptr",
+                "variable.other.readonly",
+                "variable.readonly",
+                "variable.other.member.readonly",
+                "variable.other.constant.property"
+            ],
+            "settings": {
+                "foreground": "#A8304B"
+            }
+        },
+        // =======================================================================
+        // DOCUMENTATION 🩶 — comments & doc blocks
+        // =======================================================================
+        {
+            "name": "@Comments",
             "scope": [
                 "comment",
                 "comment.line",
@@ -853,26 +857,27 @@
                 "comment.block.documentation",
                 "punctuation.definition.comment.cpp",
                 "punctuation.definition.comment.documentation",
-                "comment.line.double-slash",
-                "punctuation.definition.comment",
+                "punctuation.definition.comment"
             ],
             "settings": {
                 "foreground": "#3C354E"
             }
         },
         {
-            "name": "Doxygen",
+            "name": "@Doxygen",
             "scope": [
-                "storage.type.class.doxygen",
+                "storage.type.class.doxygen"
             ],
             "settings": {
-                "foreground": "#5A4684"
+                "foreground": "#3C354E"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Preprocessor
+        // =======================================================================
+        // AUXILIARY (remain for completeness; aligned to nearest family where sensible)
+        // =======================================================================
+        // Preprocessor (closest to control/routing; distinct blue to avoid overloading 🟪)
         {
-            "name": "Preprocessor",
+            "name": "@Preprocessor",
             "scope": [
                 "meta.preprocessor",
                 "keyword.control.import",
@@ -884,10 +889,9 @@
                 "foreground": "#5572C7"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Operators
+        // Operators & Punctuation — structural glue → keep with control palette
         {
-            "name": "Operators",
+            "name": "@Operators",
             "scope": [
                 "keyword.operator",
                 "keyword.operator.arithmetic",
@@ -904,10 +908,8 @@
                 "foreground": "#7757BA"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Punctuation
         {
-            "name": "Punctuation",
+            "name": "@Punctuation",
             "scope": [
                 "punctuation",
                 "punctuation.definition",
@@ -920,16 +922,15 @@
                 "punctuation.section.brackets.begin",
                 "punctuation.section.brackets.end",
                 "punctuation.section.parens.begin",
-                "punctuation.section.parens.end",
+                "punctuation.section.parens.end"
             ],
             "settings": {
                 "foreground": "#7757BA"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Storage Modifiers
+        // Storage modifiers — read as control-ish qualifiers
         {
-            "name": "Storage Modifiers",
+            "name": "@Storage Modifiers",
             "scope": [
                 "storage.modifier",
                 "keyword.declaration",
@@ -949,19 +950,9 @@
                 "foreground": "#7757BA"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Escape Characters
+        // Invalid / Deprecated — error signaling
         {
-            "name": "Escape Characters",
-            "scope": [],
-            "settings": {
-                "foreground": "#FAE57B"
-            }
-        },
-        // ---------------------------------------------------------------------------
-        // Invalid / Deprecated
-        {
-            "name": "Invalid",
+            "name": "@Invalid",
             "scope": [
                 "invalid",
                 "invalid.illegal",
@@ -971,10 +962,9 @@
                 "foreground": "#FF0000"
             }
         },
-        // ---------------------------------------------------------------------------
-        // Other Meta Scopes
+        // Meta — high-level containers; subtle purple variant
         {
-            "name": "Meta Elements",
+            "name": "@Meta Elements",
             "scope": [
                 "meta.template",
                 "meta.function.definition",
@@ -984,7 +974,7 @@
                 "meta.namespace"
             ],
             "settings": {
-                "foreground": "#8753B8"
+                "foreground": "#7757BA"
             }
         }
     ]

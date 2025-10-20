@@ -1,123 +1,191 @@
 # 秋葉原 ・ Akihabara: A Night in Tokyo — Code Color Theory
 
+> Example (C++)
+
+![source](./assets/example_source.png)  ![header](./assets/example_header.png)
+
+
 Akihabara at night is neon over black: vivid signals guiding calm movement.
-This theme applies that idea to code. Each **programming concept** gets a **base color family** (red / purple / blue / green→teal / yellow / orange), and each **subtype** gets a precise hue so your eyes learn “what kind of thing” before reading the word.
+This theme maps that idea to code: **each concept = a color family**, and **each sub-role = a nearby hue**. Your eyes learn the category before your brain parses the token.
 
-- **Values** feel alive and immediate.
-- **Control** is signage—clear routes, no cargo.
-- **Actions** are the waterworks—they reshape.
-- **State & Structure** are where things live and organize.
-- **Definitions & Literals** set shape and fixed atoms.
-- **Parameters** are the in-flight handoff between value and state.
-
-Designed for **long sessions**: high contrast on black, saturated but disciplined accents, and systematic semantics so large codebases feel navigable, not noisy.
+Designed for **long sessions**: high contrast on black, saturated but disciplined accents, and semantic consistency so big codebases feel navigable—not noisy.
 
 ---
 
-# Color Design Philosophy
+## Table of Contents
 
-Color families map to concepts; individual hues map to sub-roles. Keep families distinct so categories are recognizable at a glance, then encode nuance via hue/saturation shifts within each family.
-
----
-
-# Values / Information
-
-**Idea & Rationale:** Values are the code’s **lifeblood**. Keep the family in **red** for “this is data.” Use brightness/hue to encode role; this stays distinct from **Actions** (blue) and **Control** (purple).
-
-## Subtypes & Color Behavior
-
-| Subtype           | Hex     | Name              | Metaphor        | Role Cue                        |
-|-------------------|---------|-------------------|-----------------|----------------------------------|
-| Constants         | #A8304B | Amaranth Purple   | **Old blood**   | Immutable foundation             |
-| Local Variables   | #D53D5C | Cerise            | **Fresh blood** | Scoped, short-lived carriers     |
-| Member Variables  | #904483 | Plum              | **Royal blood** | Object identity & enduring state |
-
----
-
-# Keywords / Flow Control
-
-**Idea & Rationale:** Flow words are **traffic signals**—they **route** data; they don’t carry it. One confident **purple** unifies control and stays distinct from **Values** (red) and **Actions** (blue).
-
-## Subtypes & Color Behavior
-
-| Category                 | Examples                                                                 | Hex     | Name          | Role Cue               |
-|--------------------------|--------------------------------------------------------------------------|---------|---------------|------------------------|
-| Branching                | `if`, `else`, `switch`, `case`, `default`                                | #7757BA | Royal Purple  | Choose a path          |
-| Looping                  | `for`, `while`, `do`                                                     | #7757BA | Royal Purple  | Repeat a path          |
-| Transfer                 | `return`, `break`, `continue`                                            | #7757BA | Royal Purple  | Exit / skip / handoff  |
-| Exceptions               | `try`, `catch`, `throw`                                                  | #7757BA | Royal Purple  | Detour on error        |
-| Misc Flow                | `goto`, labels                                                           | #7757BA | Royal Purple  | Unstructured jump      |
-| **Access / Declarations**| `public`, `protected`, `private`, `class`, `struct`, `namespace`, `interface`, `enum`, `union`, `template`, `using namespace`, scope `::` | #7757BA | Royal Purple  | Visibility & structure |
+- [Order of Concepts (and why)](#order-of-concepts-and-why)
+- [Color Design Philosophy](#color-design-philosophy)
+- [Keywords / Control 🟪](#keywords--control-)
+- [Definitions / Primitives 🟨](#definitions--primitives-)
+- [State / Storage 🟢/🧊](#state--storage-)
+- [Action / Transformation 🔵](#action--transformation-)
+- [Parameters 🟧](#parameters-)
+- [Values / Information 🔴](#values--information-)
+- [Documentation 🩶](#documentation-)
+- [Quick Mental Model](#quick-mental-model)
+- [Color Table](#color-table)
+- [Installation](#installation)
+- [Recommendations](#recommendations)
+- [Feedback](#feedback)
+- [Credits](#credits)
 
 ---
 
-# Action / Transformation
+## Order of Concepts (and why)
 
-**Idea & Rationale:** Callables are the system’s **waterworks**—they move and reshape data. Keep **blue** for “this acts,” with a greener tilt when action is state-aware. This separates **Actions** (blue) from **Values** (red) and **Control** (purple).
+1) **Keywords / Control** 🟪 — shapes and directs execution
+2) **Definitions / Primitives** 🟨 — declares identity and atoms
+3) **State / Storage** 🟢/🧊 — where things live and how they’re organized
+4) **Action / Transformation** 🔵 — what code does (movement/change)
+5) **Parameters** 🟧 — handoff points at call/def sites
+6) **Values / Information** 🔴 — the data itself
 
-## Subtypes & Color Behavior
-
-| Subtype   | Hex     | Name           | Role Cue                          |
-|-----------|---------|----------------|-----------------------------------|
-| Function  | #00A5E0 | Picton Blue    | Free-flowing transform            |
-| Method    | #06A3C6 | Pacific Cyan   | Transform shaped by object/state  |
-
----
-
-# State / Storage
-
-**Idea & Rationale:** These are the **containers and grounds**—where information **lives** (green) or is **organized** (teal). Use **green → teal** to signal **state & structure**, distinct from **Values** (red) and **Control** (purple).
-
-## Subtypes & Color Behavior
-
-| Subtype    | Hex     | Name            | Role Cue                                   |
-|------------|---------|-----------------|--------------------------------------------|
-| Namespace  | #15A284 | Zomp            | Organizational scope (non-instantiable)    |
-| Class      | #0EA3A5 | Light Sea Green | Owns/organizes object state                |
+This descends by **scope impact**: structure → identity → containers → operations → interfaces → payload.
 
 ---
 
-# Definitions / Primitives
+## Color Design Philosophy
 
-**Idea & Rationale:** These mark **shape** (types) and **literal atoms** (literals). Keep **types** in pure yellow for “what it *is*,” and render **literals** in yellow-green for “the concrete value here,” distinct from **Values** (red), **Actions** (blue), and **Control** (purple).
-**Note:** **Numbers** lean slightly green to emphasize **discrete state**; **enum values** remain literal (yellow-green), while **enum type names** stay with the **type** family (pure yellow).
-
-## Subtypes & Color Behavior
-
-| Subtype                            | Hex     | Name        | Role Cue                                  |
-|------------------------------------|---------|-------------|-------------------------------------------|
-| Types (incl. enum/class names)     | #FAE57B | Jasmine     | Type identifiers & fundamental types      |
-| Strings                            | #88C480 | Pistachio   | Text literals (fixed in source)           |
-| Booleans                           | #88C480 | Pistachio   | `true` / `false` literals                 |
-| Numbers                            | #88C480 | Pistachio   | Discrete, fixed numeric state             |
-| Enums (values)                     | #88C480 | Pistachio   | Enumerator values (enum *types* use Jasmine) |
+- **One family per concept** for instant recognition: Control 🟪, Types/Literals 🟨, State 🟢/🧊, Actions 🔵, Parameters 🟧, Values 🔴.
+- **Hue drift within the family** clarifies sub-roles (e.g., function vs. method both 🔵, but adjacent blues).
+- **Thermal logic:** hot **payload** 🔴 vs. cool **machinery** 🔵🟪; **ground** 🟢/🧊 stabilizes; **identity** 🟨 and **handoff** 🟧 annotate.
 
 ---
 
-# Parameters
+## Keywords / Control 🟪
 
-**Idea & Rationale:** Parameters are **handoff points**—between **Values** (red) and **State** (green). Use **orange** to signal “in-flight input/output” without conflating with locals or fields.
+**Intent:** Flow words are signage—they **route**, they do not carry. A unified purple keeps the skeleton obvious and prevents “rainbow control.”
 
-## Subtypes & Color Behavior
+**Includes:**
+- Branching, looping, transfer, exceptions, labels
+- Visibility and declaration keywords (`class`, `struct`, `namespace`, `enum`, `union`, `template`, access specifiers, scope `::`)
 
-| Subtype   | Hex     | Name         | Role Cue                                      |
-|-----------|---------|--------------|-----------------------------------------------|
-| Parameter | #F47357 | Burnt Sienna | Per-call inputs/outputs, bound to scope       |
+**Why purple?** 🟪 It reads as structural and slightly formal—great for “map first, details later.”
 
 ---
 
-# Comments
+## Definitions / Primitives 🟨
 
-Muted, readable notes that recede from code but remain legible during long reads.
-Hex: **#3C354E** (Ultra Violet)
+**Intent:** Declare **what things are** (types) and the **fixed atoms** in source (literals).
+
+**Includes:**
+- Fundamental and user types (incl. enum/class names)
+- Literal tokens (numbers, booleans, strings, enumerators)
+
+**Why yellow?** 🟨 It pops early in peripheral vision—ideal for type identity and atomic constants without competing with control (🟪) or calls (🔵).
+
+
+---
+
+## State / Storage 🟢/🧊
+
+**Intent:** The **ground** and **containers**—where information lives and how it’s organized.
+
+**Includes:**
+- Namespaces, classes, and other scope/ownership carriers
+
+**Why green→teal?** 🟢 implies stability/ground; drift toward 🧊 (teal/cyan) hints structured, persistent context (namespaces/classes) without reading as “action.”
+
+
+---
+
+## Action / Transformation 🔵
+
+**Intent:** The **waterworks**—things that move or reshape data.
+
+**Includes:**
+- Functions and methods (with a subtle hue split to signal free vs. state-aware actions)
+
+**Why blue?** 🔵 Cool = motion/change, complementary to hot data 🔴 and separate from routing 🟪.
+
+---
+
+## Parameters 🟧
+
+**Intent:** **Handoff points**—the interface binding values to operations and state.
+
+**Includes:**
+- Function and method parameters at both declaration and call sites
+
+**Why orange?** 🟧 Warm enough to relate to data 🔴, distinct enough to read as an **interface**, not payload or control.
+
+---
+
+## Values / Information 🔴
+
+
+**Intent:** The **lifeblood**—actual data in motion or at rest.
+
+**Includes:**
+- Constants, locals, members (with variations for lifetime/scope while staying in-family)
+
+**Why red?** 🔴 High salience indicates “this carries content,” clearly apart from machinery (🔵🟪).
+
+---
+
+## Documentation 🩶
+
+Muted guidance that recedes but remains legible.
+(They should never shout over the code map.)
+
+---
+
+## Quick Mental Model
+
+- **See purple** 🟪 → “this routes”
+- **See yellow** 🟨 → “this defines / is a literal”
+- **See green/teal** 🟢/🧊 → “this contains / organizes”
+- **See blue** 🔵 → “this acts”
+- **See orange** 🟧 → “this interfaces (params)”
+- **See red** 🔴 → “this is the data”
+
+---
+
+## Color Table
+
+| Family | Type | Hex | Swatch Name |
+|--------|------|-----|-------------|
+| **Control** 🟪 | *Branching* (`if`, `else`, `switch`)<br>*Looping* (`for`, `while`, `do`)<br>*Transfer* (`return`, `break`, `continue`)<br>*Exceptions* (`try`, `catch`, `throw`)<br>*Access & declarations* (`public`, `private`, `class`, `namespace`, `::`), etc. | ![#7757BA](https://placehold.co/15x15/7757BA/7757BA.png) `#7757BA` | Royal Purple |
+| **Definitions / Primitives** 🟨 | *Type identifiers* (built-ins & user types; enum/class names, e.g., `int`, `void`) | ![#CBBB52](https://placehold.co/15x15/CBBB52/CBBB52.png) `#CBBB52` | Old Gold |
+| **Definitions / Primitives** 🟨 | *Literals* — numbers, booleans, strings, enum values (e.g., `42`, `true`, `"hello"`) | ![#70AF6B](https://placehold.co/15x15/70AF6B/70AF6B.png) `#70AF6B` | Asparagus |
+| **State / Storage** 🟢/🧊 | *Namespace* (organizational scope; not instanced, e.g., `std::`) | ![#15A284](https://placehold.co/15x15/15A284/15A284.png) `#15A284` | Zomp |
+| **State / Storage** 🟢/🧊 | *Class* (owns/organizes object state, e.g., `MyClass` as type) | ![#0EA3A5](https://placehold.co/15x15/0EA3A5/0EA3A5.png) `#0EA3A5` | Light Sea Green |
+| **Action / Transformation** 🔵 | *Function* (free, stateless transform, e.g., `func()`) | ![#00A5E0](https://placehold.co/15x15/00A5E0/00A5E0.png) `#00A5E0` | Picton Blue |
+| **Action / Transformation** 🔵 | *Method* (state-aware transform, e.g., `obj.method()`) | ![#06A3C6](https://placehold.co/15x15/06A3C6/06A3C6.png) `#06A3C6` | Pacific Cyan |
+| **Parameters** 🟧 | *Function/method parameters* (per-call inputs/outputs, e.g., `param` in `func(param)`) | ![#D77F43](https://placehold.co/15x15/D77F43/D77F43.png) `#D77F43` | Caramel |
+| **Values / Information** 🔴 | *Constants* (immutable values, e.g., `const PI`) | ![#A8304B](https://placehold.co/15x15/A8304B/A8304B.png) `#A8304B` | Amaranth Purple |
+| **Values / Information** 🔴 | *Local variables* (short-lived, scoped, e.g., `int x`) | ![#D53D5C](https://placehold.co/15x15/D53D5C/D53D5C.png) `#D53D5C` | Cerise |
+| **Values / Information** 🔴 | *Member variables* (object state / fields, e.g., `obj.member`) | ![#A7447C](https://placehold.co/15x15/A7447C/A7447C.png) `#A7447C` | Magenta Haze |
+| **Documentation** 🩶 | *Comments / documentation* (subtle, legible, e.g., `// comment`) | ![#3C354E](https://placehold.co/15x15/3C354E/3C354E.png) `#3C354E` | Ultra Violet |
+
+---
+
+## Installation
+
+Install directly from the [Visual Studio Marketplace][marketplace_link], or search for "Akihabara" in VS Code Extensions.
 
 ---
 
 ## Recommendations
-For best results, use **Fira Code Retina** (ligatures on). Consider **disabling Bracket Pair Colorization** to let Akihabara’s bracket/paren accents carry the structure.
+
+- **Font:** [Fira Code Retina][fira_code_link] (with ligatures enabled).
+- Consider disabling **Bracket Pair Colorization** in VS Code settings—this lets Akihabara’s semantic accents handle structure without interference.
+
+---
 
 ## Feedback
-If you encounter any issues, or have suggestions for improving this theme, please open an issue on GitHub.
 
-## Review
-If you enjoy using the Akihabara theme, please consider leaving a review on the marketplace. Your support helps others discover the theme!
+If you encounter any issues or have suggestions for improving this theme, please open an [issue][issue_link] on GitHub.
+
+---
+
+## Credits
+
+[Semantic Rainbow](https://thertzlor.github.io/semantic-rainbow/) - The color design for this theme was heavily inspired by thertzlor's "Semantic Rainbow" design philosophy.
+
+
+
+[fira_code_link]: https://github.com/tonsky/FiraCode 'FiraCode GitHub repository page'
+[issue_link]: https://github.com/justinlavi/Akihabara/issues 'GitHub issue page'
+[marketplace_link]: https://marketplace.visualstudio.com/items?itemName=justin-lavi.akihabara 'Visual Studio Marketplace page'
