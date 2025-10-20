@@ -1,6 +1,11 @@
 # Change Log
 
-## [4.8.2] - 2025-10-20
+## [4.8.4] - 2025-10-20
+
+- Fixed enum color
+- Fixed directives color
+
+## [4.8.3] - 2025-10-20
 
 - Reworked README, added example screenshots, muted some colors (yellow, orange), improved consistencey of palette
 

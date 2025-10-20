@@ -537,12 +537,12 @@
         {
             "name": "@Branching (if/else/switch/case)",
             "scope": [
-                "keyword.control.if.cpp",
-                "keyword.control.else",
-                "keyword.control.conditional",
-                "keyword.control.switch",
                 "keyword.control.case",
+                "keyword.control.conditional",
                 "keyword.control.default",
+                "keyword.control.else",
+                "keyword.control.if.cpp",
+                "keyword.control.switch",
                 "keyword.other.using.directive.cpp"
             ],
             "settings": {
@@ -552,22 +552,22 @@
         {
             "name": "@Looping (for/while/do)",
             "scope": [
-                "keyword.control.loop",
+                "keyword.control.do",
                 "keyword.control.for",
-                "keyword.control.while",
-                "keyword.control.do"
+                "keyword.control.loop",
+                "keyword.control.while"
             ],
             "settings": {
                 "foreground": "#7757BA"
             }
         },
         {
-            "name": "@Transfer (return/break/continue)",
+            "name": "@Transfer (break/continue/return)",
             "scope": [
-                "keyword.control.return",
                 "keyword.control.break",
                 "keyword.control.continue",
-                "keyword.control.flow"
+                "keyword.control.flow",
+                "keyword.control.return"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -588,8 +588,8 @@
         {
             "name": "@Misc Flow (goto / labels)",
             "scope": [
+                "entity.name.label",
                 "keyword.control.goto",
-                "entity.name.label"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -598,22 +598,20 @@
         {
             "name": "@Access / Declarations (public/protected/private, class/struct/namespace, ::, etc.)",
             "scope": [
-                "storage.type.modifier.access",
-                "storage.type.class",
-                "storage.type.struct",
-                "storage.type.namespace",
-                "storage.type.interface",
                 "entity.other.attribute",
-                "support.other.attribute",
-                "storage.type.enum",
-                "storage.type.union",
-                "variable.other.unknown.public",
-                "entity.name.type.enum",
-                "entity.name.type.union",
-                "storage.type.template",
                 "punctuation.separator.scope-resolution",
+                "storage.type.class",
+                "storage.type.enum",
+                "storage.type.interface",
+                "storage.type.modifier.access",
+                "storage.type.namespace",
+                "storage.type.struct",
+                "storage.type.template",
+                "storage.type.union",
+                "support.other.attribute",
                 // CMake
-                "support.type.targetProperty.cmake"
+                "support.type.targetProperty.cmake",
+                "variable.other.unknown.public"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -623,24 +621,11 @@
         // 2) DEFINITIONS / PRIMITIVES 🟨 — identity & fixed atoms
         // =======================================================================
         {
-            "name": "@Types (identifiers & primitive type keywords)",
-            "scope": [
-                "storage.type",
-                "storage.type.primitive",
-                "support.type",
-                "keyword.other.typedef",
-                "keyword.other.default"
-            ],
-            "settings": {
-                "foreground": "#CBBB52"
-            }
-        },
-        {
             "name": "@Booleans (true/false)",
             "scope": [
                 "constant.language.boolean",
-                "constant.language.true",
-                "constant.language.false"
+                "constant.language.false",
+                "constant.language.true"
             ],
             "settings": {
                 "foreground": "#CBBB52"
@@ -649,24 +634,36 @@
         {
             "name": "@Strings (all kinds)",
             "scope": [
-                "string.quoted.double",
-                "string.quoted.single",
-                "string.quoted.raw",
-                "string.quoted.other",
-                "string.quoted.other.literal",
-                "string.template",
-                "string.quoted.double.include",
                 "constant.character",
+                "constant.character.escape",
                 "entity.name.operator.custom-literal.string",
+                "keyword.other.unit.suffix",
                 "punctuation.definition.string.begin",
                 "punctuation.definition.string.end",
-                "constant.character.escape",
-                "keyword.other.unit.suffix",
-                // CMake
-                "string.quoted.double-slash.cmake"
+                "string.quoted.double",
+                "string.quoted.double.include",
+                "string.quoted.double-slash.cmake",
+                "string.quoted.other",
+                "string.quoted.other.literal",
+                "string.quoted.raw",
+                "string.quoted.single",
+                "string.template"
             ],
             "settings": {
                 "foreground": "#70AF6B"
+            }
+        },
+        {
+            "name": "@Types (identifiers & primitive type keywords)",
+            "scope": [
+                "keyword.other.default",
+                "keyword.other.typedef",
+                "storage.type",
+                "storage.type.primitive",
+                "support.type"
+            ],
+            "settings": {
+                "foreground": "#CBBB52"
             }
         },
         {
@@ -686,8 +683,8 @@
         {
             "name": "@Enums — Enumerator Values",
             "scope": [
+                "constant.other.enum",
                 "variable.other.enummember",
-                "constant.other.enum"
             ],
             "settings": {
                 "foreground": "#70AF6B"
@@ -711,16 +708,17 @@
             "scope": [
                 "entity.name.type",
                 "entity.name.type.class",
-                "entity.name.type.struct",
-                "meta.class-identifier",
-                "support.class",
-                "entity.name.type.class.templated",
                 "entity.name.type.class.generic",
                 "entity.name.type.class.reference",
-                "entity.name.type.class.value",
+                "entity.name.type.class.templated",
+                "entity.name.type.enum",
                 "entity.name.type.interface",
+                "entity.name.type.struct",
+                "entity.name.type.union",
                 "entity.other.inherited-class",
-                "string.quoted.other.lt-gt.include.cpp"
+                "meta.class-identifier",
+                "string.quoted.other.lt-gt.include.cpp",
+                "support.class"
             ],
             "settings": {
                 "foreground": "#0EA3A5"
@@ -733,30 +731,30 @@
             "name": "@Functions (declarations & calls)",
             "scope": [
                 "entity.name.function",
-                "meta.function-call",
-                "meta.function-call.c",
-                "variable.function",
-                "support.function",
-                "entity.name.function.templated",
                 "entity.name.function.operator",
                 "entity.name.function.preprocessor",
-                "punctuation.section.parameters.begin.bracket.round",
-                "punctuation.section.parameters.end.bracket.round",
-                "punctuation.definition.function.cpp",
-                "punctuation.section.arguments.begin.bracket.round.function.call.initializer",
-                "punctuation.section.arguments.end.bracket.round.function.call.initializer",
-                "punctuation.section.arguments.begin.bracket.round.function.call.cpp",
-                "punctuation.section.arguments.end.bracket.round.function.call.cpp",
-                "punctuation.section.arguments.begin.bracket.round.function.call.upper-case.cpp",
-                "punctuation.section.arguments.end.bracket.round.function.call.upper-case.cpp",
-                "punctuation.section.angle-brackets.begin.template.definition",
-                "punctuation.section.angle-brackets.end.template.definition",
+                "entity.name.function.templated",
+                "meta.function-call",
+                "meta.function-call.c",
                 "punctuation.definition.begin.bracket.square",
                 "punctuation.definition.end.bracket.square",
-                "punctuation.section.angle-brackets.begin.template.call",
-                "punctuation.section.angle-brackets.end.template.call",
+                "punctuation.definition.function.cpp",
                 "punctuation.definition.parameters.begin.preprocessor",
-                "punctuation.definition.parameters.end.preprocessor"
+                "punctuation.definition.parameters.end.preprocessor",
+                "punctuation.section.angle-brackets.begin.template.call",
+                "punctuation.section.angle-brackets.begin.template.definition",
+                "punctuation.section.angle-brackets.end.template.call",
+                "punctuation.section.angle-brackets.end.template.definition",
+                "punctuation.section.arguments.begin.bracket.round.function.call.cpp",
+                "punctuation.section.arguments.begin.bracket.round.function.call.initializer",
+                "punctuation.section.arguments.begin.bracket.round.function.call.upper-case.cpp",
+                "punctuation.section.arguments.end.bracket.round.function.call.cpp",
+                "punctuation.section.arguments.end.bracket.round.function.call.initializer",
+                "punctuation.section.arguments.end.bracket.round.function.call.upper-case.cpp",
+                "punctuation.section.parameters.begin.bracket.round",
+                "punctuation.section.parameters.end.bracket.round",
+                "support.function",
+                "variable.function"
             ],
             "settings": {
                 "foreground": "#00A5E0"
@@ -765,16 +763,16 @@
         {
             "name": "@Methods (member calls)",
             "scope": [
-                "meta.method-call",
                 "entity.name.function.member",
-                "variable.function.member",
-                "support.function.member",
                 "entity.name.function.member.static",
                 "entity.name.function.operator.member",
+                "meta.method-call",
                 "punctuation.section.arguments.begin.bracket.round.function.member.cpp",
                 "punctuation.section.arguments.end.bracket.round.function.member.cpp",
                 "punctuation.section.parameters.begin.bracket.round.special.constructor.cpp",
-                "punctuation.section.parameters.end.bracket.round.special.constructor.cpp"
+                "punctuation.section.parameters.end.bracket.round.special.constructor.cpp",
+                "support.function.member",
+                "variable.function.member"
             ],
             "settings": {
                 "foreground": "#06A3C6"
@@ -786,9 +784,9 @@
         {
             "name": "@Parameters",
             "scope": [
-                "variable.parameter",
                 "entity.name.variable.parameter",
-                "meta.parameter"
+                "meta.parameter",
+                "variable.parameter"
             ],
             "settings": {
                 "foreground": "#D77F43"
@@ -800,10 +798,10 @@
         {
             "name": "@Local Variables",
             "scope": [
-                "variable.other.local",
+                "variable.language.this",
                 "variable.other",
                 "variable.other.global",
-                "variable.language.this"
+                "variable.other.local"
             ],
             "settings": {
                 "foreground": "#D53D5C"
@@ -812,14 +810,13 @@
         {
             "name": "@Member Variables",
             "scope": [
+                "support.type.property-name.json",
+                "variable.other.event",
+                "variable.other.field",
                 "variable.other.member",
                 "variable.other.property",
-                "variable.other.field",
-                "variable.other.property.static",
                 "variable.other.property.cli",
-                "variable.other.event",
-                // JSON
-                "support.type.property-name.json"
+                "variable.other.property.static"
             ],
             "settings": {
                 "foreground": "#A7447C"
@@ -828,17 +825,17 @@
         {
             "name": "@Constants",
             "scope": [
-                "variable.other.constant",
-                "constant.other",
                 "constant.language",
-                "support.constant",
-                "entity.name.constant",
                 "constant.language.null",
                 "constant.language.nullptr",
-                "variable.other.readonly",
-                "variable.readonly",
+                "constant.other",
+                "entity.name.constant",
+                "support.constant",
+                "variable.other.constant",
+                "variable.other.constant.property",
                 "variable.other.member.readonly",
-                "variable.other.constant.property"
+                "variable.other.readonly",
+                "variable.readonly"
             ],
             "settings": {
                 "foreground": "#A8304B"
@@ -851,13 +848,13 @@
             "name": "@Comments",
             "scope": [
                 "comment",
-                "comment.line",
-                "comment.line.double-slash",
                 "comment.block",
                 "comment.block.documentation",
+                "comment.line",
+                "comment.line.double-slash",
+                "punctuation.definition.comment",
                 "punctuation.definition.comment.cpp",
-                "punctuation.definition.comment.documentation",
-                "punctuation.definition.comment"
+                "punctuation.definition.comment.documentation"
             ],
             "settings": {
                 "foreground": "#3C354E"
@@ -879,11 +876,12 @@
         {
             "name": "@Preprocessor",
             "scope": [
-                "meta.preprocessor",
+                "keyword.control.directive",
                 "keyword.control.import",
                 "keyword.control.import.include",
-                "punctuation.definition.directive",
-                "meta.preprocessor.macro"
+                "meta.preprocessor",
+                "meta.preprocessor.macro",
+                "punctuation.definition.directive"
             ],
             "settings": {
                 "foreground": "#5572C7"
@@ -893,16 +891,16 @@
         {
             "name": "@Operators",
             "scope": [
+                "entity.name.operator.custom-literal",
                 "keyword.operator",
                 "keyword.operator.arithmetic",
                 "keyword.operator.assignment",
                 "keyword.operator.bitwise",
-                "keyword.operator.logical",
                 "keyword.operator.comparison",
-                "keyword.operator.new",
                 "keyword.operator.delete",
-                "keyword.operator.wordlike",
-                "entity.name.operator.custom-literal"
+                "keyword.operator.logical",
+                "keyword.operator.new",
+                "keyword.operator.wordlike"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -913,8 +911,6 @@
             "scope": [
                 "punctuation",
                 "punctuation.definition",
-                "punctuation.separator",
-                "punctuation.terminator",
                 "punctuation.definition.parameters.begin",
                 "punctuation.definition.parameters.end",
                 "punctuation.section.block.begin",
@@ -922,7 +918,9 @@
                 "punctuation.section.brackets.begin",
                 "punctuation.section.brackets.end",
                 "punctuation.section.parens.begin",
-                "punctuation.section.parens.end"
+                "punctuation.section.parens.end",
+                "punctuation.separator",
+                "punctuation.terminator"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -932,19 +930,19 @@
         {
             "name": "@Storage Modifiers",
             "scope": [
-                "storage.modifier",
                 "keyword.declaration",
+                "storage.modifier",
                 "storage.modifier.const",
-                "storage.modifier.static",
-                "storage.modifier.extern",
-                "storage.modifier.volatile",
-                "storage.modifier.mutable",
-                "storage.modifier.register",
-                "storage.modifier.virtual",
-                "storage.modifier.inline",
                 "storage.modifier.explicit",
+                "storage.modifier.extern",
                 "storage.modifier.friend",
-                "storage.modifier.override"
+                "storage.modifier.inline",
+                "storage.modifier.mutable",
+                "storage.modifier.override",
+                "storage.modifier.register",
+                "storage.modifier.static",
+                "storage.modifier.virtual",
+                "storage.modifier.volatile"
             ],
             "settings": {
                 "foreground": "#7757BA"
@@ -955,8 +953,8 @@
             "name": "@Invalid",
             "scope": [
                 "invalid",
+                "invalid.deprecated",
                 "invalid.illegal",
-                "invalid.deprecated"
             ],
             "settings": {
                 "foreground": "#FF0000"
@@ -966,12 +964,12 @@
         {
             "name": "@Meta Elements",
             "scope": [
-                "meta.template",
-                "meta.function.definition",
                 "meta.class",
-                "meta.struct",
                 "meta.enum",
-                "meta.namespace"
+                "meta.function.definition",
+                "meta.namespace",
+                "meta.struct",
+                "meta.template"
             ],
             "settings": {
                 "foreground": "#7757BA"
