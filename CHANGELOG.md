@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.8.5] - 2025-10-20
+
+- Fixed enum class keyword color
+
 ## [4.8.4] - 2025-10-20
 
 - Fixed enum color

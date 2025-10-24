@@ -602,6 +602,7 @@
                 "punctuation.separator.scope-resolution",
                 "storage.type.class",
                 "storage.type.enum",
+                "storage.type.enum.enum-key.class.cpp",
                 "storage.type.interface",
                 "storage.type.modifier.access",
                 "storage.type.namespace",
@@ -658,7 +659,7 @@
             "scope": [
                 "keyword.other.default",
                 "keyword.other.typedef",
-                "storage.type",
+                "storage.type.built-in.primitive",
                 "storage.type.primitive",
                 "support.type"
             ],

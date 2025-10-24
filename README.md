@@ -17,7 +17,7 @@ Designed for **long sessions**: high contrast on black, saturated but discipline
 - [Order of Concepts (and why)](#order-of-concepts-and-why)
 - [Color Design Philosophy](#color-design-philosophy)
 - [Keywords / Control 🟪](#keywords--control-)
-- [Definitions / Primitives 🟨](#definitions--primitives-)
+- [Definitions / Primitives 🟡](#definitions--primitives-)
 - [State / Storage 🟢/🧊](#state--storage-)
 - [Action / Transformation 🔵](#action--transformation-)
 - [Parameters 🟧](#parameters-)
@@ -35,7 +35,7 @@ Designed for **long sessions**: high contrast on black, saturated but discipline
 ## Order of Concepts (and why)
 
 1) **Keywords / Control** 🟪 — shapes and directs execution
-2) **Definitions / Primitives** 🟨 — declares identity and atoms
+2) **Definitions / Primitives** 🟡 — declares identity and atoms
 3) **State / Storage** 🟢/🧊 — where things live and how they’re organized
 4) **Action / Transformation** 🔵 — what code does (movement/change)
 5) **Parameters** 🟧 — handoff points at call/def sites
@@ -47,9 +47,9 @@ This descends by **scope impact**: structure → identity → containers → ope
 
 ## Color Design Philosophy
 
-- **One family per concept** for instant recognition: Control 🟪, Types/Literals 🟨, State 🟢/🧊, Actions 🔵, Parameters 🟧, Values 🔴.
+- **One family per concept** for instant recognition: Control 🟪, Types/Literals 🟡, State 🟢/🧊, Actions 🔵, Parameters 🟧, Values 🔴.
 - **Hue drift within the family** clarifies sub-roles (e.g., function vs. method both 🔵, but adjacent blues).
-- **Thermal logic:** hot **payload** 🔴 vs. cool **machinery** 🔵🟪; **ground** 🟢/🧊 stabilizes; **identity** 🟨 and **handoff** 🟧 annotate.
+- **Thermal logic:** hot **payload** 🔴 vs. cool **machinery** 🔵🟪; **ground** 🟢/🧊 stabilizes; **identity** 🟡 and **handoff** 🟧 annotate.
 
 ---
 
@@ -65,7 +65,7 @@ This descends by **scope impact**: structure → identity → containers → ope
 
 ---
 
-## Definitions / Primitives 🟨
+## Definitions / Primitives 🟡
 
 **Intent:** Declare **what things are** (types) and the **fixed atoms** in source (literals).
 
@@ -73,7 +73,7 @@ This descends by **scope impact**: structure → identity → containers → ope
 - Fundamental and user types (incl. enum/class names)
 - Literal tokens (numbers, booleans, strings, enumerators)
 
-**Why yellow?** 🟨 It pops early in peripheral vision—ideal for type identity and atomic constants without competing with control (🟪) or calls (🔵).
+**Why yellow?** 🟡 It pops early in peripheral vision—ideal for type identity and atomic constants without competing with control (🟪) or calls (🔵).
 
 
 ---
@@ -134,7 +134,7 @@ Muted guidance that recedes but remains legible.
 ## Quick Mental Model
 
 - **See purple** 🟪 → “this routes”
-- **See yellow** 🟨 → “this defines / is a literal”
+- **See yellow** 🟡 → “this defines / is a literal”
 - **See green/teal** 🟢/🧊 → “this contains / organizes”
 - **See blue** 🔵 → “this acts”
 - **See orange** 🟧 → “this interfaces (params)”
@@ -147,8 +147,8 @@ Muted guidance that recedes but remains legible.
 | Family | Type | Hex | Swatch Name |
 |--------|------|-----|-------------|
 | **Control** 🟪 | *Branching* (`if`, `else`, `switch`)<br>*Looping* (`for`, `while`, `do`)<br>*Transfer* (`return`, `break`, `continue`)<br>*Exceptions* (`try`, `catch`, `throw`)<br>*Access & declarations* (`public`, `private`, `class`, `namespace`, `::`), etc. | ![#7757BA](https://placehold.co/15x15/7757BA/7757BA.png) `#7757BA` | Royal Purple |
-| **Definitions / Primitives** 🟨 | *Type identifiers* (built-ins & user types; enum/class names, e.g., `int`, `void`) | ![#CBBB52](https://placehold.co/15x15/CBBB52/CBBB52.png) `#CBBB52` | Old Gold |
-| **Definitions / Primitives** 🟨 | *Literals* — numbers, booleans, strings, enum values (e.g., `42`, `true`, `"hello"`) | ![#70AF6B](https://placehold.co/15x15/70AF6B/70AF6B.png) `#70AF6B` | Asparagus |
+| **Definitions / Primitives** 🟡 | *Type identifiers* (built-ins & user types; enum/class names, e.g., `int`, `void`) | ![#CBBB52](https://placehold.co/15x15/CBBB52/CBBB52.png) `#CBBB52` | Old Gold |
+| **Definitions / Primitives** 🟡 | *Literals* — numbers, booleans, strings, enum values (e.g., `42`, `true`, `"hello"`) | ![#70AF6B](https://placehold.co/15x15/70AF6B/70AF6B.png) `#70AF6B` | Asparagus |
 | **State / Storage** 🟢/🧊 | *Namespace* (organizational scope; not instanced, e.g., `std::`) | ![#15A284](https://placehold.co/15x15/15A284/15A284.png) `#15A284` | Zomp |
 | **State / Storage** 🟢/🧊 | *Class* (owns/organizes object state, e.g., `MyClass` as type) | ![#0EA3A5](https://placehold.co/15x15/0EA3A5/0EA3A5.png) `#0EA3A5` | Light Sea Green |
 | **Action / Transformation** 🔵 | *Function* (free, stateless transform, e.g., `func()`) | ![#00A5E0](https://placehold.co/15x15/00A5E0/00A5E0.png) `#00A5E0` | Picton Blue |
