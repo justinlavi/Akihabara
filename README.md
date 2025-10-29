@@ -2,7 +2,7 @@
 
 > Example (C++)
 
-![source](./assets/example_source.png)  ![header](./assets/example_header.png)
+![source](./assets/sample_cpp_source.png)  ![header](./assets/sample_cpp_header.png)
 
 
 Akihabara at night is neon over black: vivid signals guiding calm movement.
@@ -157,7 +157,8 @@ Muted guidance that recedes but remains legible.
 | **Values / Information** 🔴 | *Constants* (immutable values, e.g., `const PI`) | ![#A8304B](https://placehold.co/15x15/A8304B/A8304B.png) `#A8304B` | Amaranth Purple |
 | **Values / Information** 🔴 | *Local variables* (short-lived, scoped, e.g., `int x`) | ![#D53D5C](https://placehold.co/15x15/D53D5C/D53D5C.png) `#D53D5C` | Cerise |
 | **Values / Information** 🔴 | *Member variables* (object state / fields, e.g., `obj.member`) | ![#A7447C](https://placehold.co/15x15/A7447C/A7447C.png) `#A7447C` | Magenta Haze |
-| **Documentation** 🩶 | *Comments / documentation* (subtle, legible, e.g., `// comment`) | ![#3C354E](https://placehold.co/15x15/3C354E/3C354E.png) `#3C354E` | Ultra Violet |
+| **Documentation** 🩶 | *Comments* (subtle, legible, e.g., `// comment`) | ![#514867](https://placehold.co/15x15/514867/514867.png) `#514867` | English Violet |
+| **Documentation** 🩶 | *Doxygen* (light highlight, e.g., `// @brief, @class`) | ![#604E87](https://placehold.co/15x15/604E87/604E87.png) `#604E87` | Ultra Violet |
 
 ---
 
@@ -183,7 +184,6 @@ If you encounter any issues or have suggestions for improving this theme, please
 ## Credits
 
 [Semantic Rainbow](https://thertzlor.github.io/semantic-rainbow/) - The color design for this theme was heavily inspired by thertzlor's "Semantic Rainbow" design philosophy.
-
 
 
 [fira_code_link]: https://github.com/tonsky/FiraCode 'FiraCode GitHub repository page'

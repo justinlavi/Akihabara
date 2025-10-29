@@ -1,5 +1,10 @@
 # Change Log
 
+## [4.8.6] - 2025-10-29
+
+- Made comments slightly brighter
+- Added a slight purple hue to Doxygen style `@brief`, `@class`, etc. for better readability
+
 ## [4.8.5] - 2025-10-20
 
 - Fixed enum class keyword color

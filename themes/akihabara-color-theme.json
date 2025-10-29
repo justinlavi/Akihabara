@@ -858,7 +858,7 @@
                 "punctuation.definition.comment.documentation"
             ],
             "settings": {
-                "foreground": "#3C354E"
+                "foreground": "#514867"
             }
         },
         {
@@ -867,7 +867,7 @@
                 "storage.type.class.doxygen"
             ],
             "settings": {
-                "foreground": "#3C354E"
+                "foreground": "#604E87"
             }
         },
         // =======================================================================

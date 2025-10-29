@@ -5,11 +5,13 @@
 
 #define SCALE_FACTOR(x) ((x) * 2.0)
 
+/// @brief A doxygen style comment
 namespace graphics_2d
 {
-    double canvas_width = 800.0;
+    extern double canvas_width; ///< A doxygen style comment
 }
 
+// This is a normal comment
 using u32 = uint32_t;
 
 enum class RenderMode
@@ -26,6 +28,7 @@ struct Point2D
     double distance() const;
 };
 
+/// @class A doxygen style comment
 class Shape
 {
 protected:

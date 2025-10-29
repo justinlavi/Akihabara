@@ -7,6 +7,7 @@ Shape::Shape(double x) : center_x(x) {}
 Circle::Circle(double x, double radius)
     : Shape(x), radius_(radius) {}
 
+// This is a comment inside graphics_2d.cpp
 void Circle::draw()
 {
     std::cout << "Circle at " << center_x
@@ -20,7 +21,7 @@ double Point2D::distance() const
 
 void transform(Point2D &point, double offset)
 {
-    point.x += offset;
+    point.x += offset;  // Comment
     point.y += offset;
 }
 
