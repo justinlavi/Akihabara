@@ -1,5 +1,9 @@
 # Change Log
 
+## [4.8.8] - 2025-10-30
+
+- Minor visibility improvements in editor
+
 ## [4.8.6] - 2025-10-29
 
 - Made comments slightly brighter
