@@ -2,19 +2,32 @@
     "name": "akihabara",
     "displayName": "Akihabara",
     "description": "Immerse yourself in the tranquil colors of Akihabara's night streets",
-    "version": "4.8.7",
+    "version": "4.9.0",
     "publisher": "justin-lavi",
     "license": "MIT",
     "author": {
         "name": "Justin Lavi",
         "email": "rumtankard@gmail.com"
     },
+    "scripts": {
+        "build:themes": "node scripts/generate-theme-variants.js",
+        "check": "npm run check:version && npm run check:theme-code-colors",
+        "check:theme-code-colors": "node scripts/check-theme-code-colors.js",
+        "check:version": "node scripts/check-version.js",
+        "vscode:prepublish": "npm run check",
+        "package": "npm run check && vsce package",
+        "publish": "npm run check && vsce publish"
+    },
     "files": [
         "package.json",
         "README.md",
         "CHANGELOG.md",
+        "assets/icon.png",
+        "assets/sample_cpp_header.png",
+        "assets/sample_cpp_source.png",
+        "scripts/**",
         "themes/**",
-        "assets/chips/**"
+        "LICENSE.txt"
     ],
     "icon": "assets/icon.png",
     "homepage": "https://github.com/justinlavi/Akihabara",
@@ -40,9 +53,27 @@
     "contributes": {
         "themes": [
             {
-                "label": "Akihabara",
+                "label": "Akihabara Light",
+                "uiTheme": "vs",
+                "path": "./themes/akihabara-light-color-theme.json",
+                "semanticHighlighting": true
+            },
+            {
+                "label": "Akihabara Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/akihabara-color-theme.json",
+                "path": "./themes/akihabara-dark-color-theme.json",
+                "semanticHighlighting": true
+            },
+            {
+                "label": "Akihabara OLED",
+                "uiTheme": "vs-dark",
+                "path": "./themes/akihabara-oled-color-theme.json",
+                "semanticHighlighting": true
+            },
+            {
+                "label": "Akihabara Experimental",
+                "uiTheme": "vs-dark",
+                "path": "./themes/akihabara-experimental-color-theme.json",
                 "semanticHighlighting": true
             }
         ]

@@ -1,5 +1,11 @@
 # Change Log
 
+## [4.9.0] - 2026-07-07
+
+- Added Akihabara Light, Akihabara Dark, Akihabara OLED, and Akihabara Experimental variants
+- Kept syntax and semantic code colors identical across all variants
+- Added release checks to prevent package/changelog version drift and theme code color drift
+
 ## [4.8.8] - 2025-10-30
 
 - Minor visibility improvements in editor

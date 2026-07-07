@@ -1,5 +1,12 @@
 # 秋葉原 ・ Akihabara: A Night in Tokyo — Code Color Theory
 
+Akihabara includes four variants:
+
+- **Akihabara Light** - a soft-white workbench with the same code colors
+- **Akihabara Dark** - the original night-street palette
+- **Akihabara OLED** - a true-black workbench with the same code colors
+- **Akihabara Experimental** - a royal violet and antique-gold workbench with the same code colors
+
 > Example (C++)
 
 ![source](./assets/sample_cpp_source.png)  ![header](./assets/sample_cpp_header.png)
