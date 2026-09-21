@@ -71,11 +71,16 @@ function readTheme(filePath) {
     return JSON.parse(json);
 }
 
+function serializeTheme(theme) {
+    return `${JSON.stringify(theme, null, 4)}\n`;
+}
+
 function writeTheme(filePath, theme) {
-    fs.writeFileSync(filePath, `${JSON.stringify(theme, null, 4)}\n`);
+    fs.writeFileSync(filePath, serializeTheme(theme));
 }
 
 module.exports = {
     readTheme,
+    serializeTheme,
     writeTheme,
 };

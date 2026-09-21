@@ -1,2 +1,19 @@
-node_modules
+# Dependencies and generated packages
+node_modules/
 *.vsix
+
+# Local environment and credentials; never commit these to the public repo
+.env
+.env.*
+!.env.example
+.npmrc
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+
+# Local tooling and OS files
+npm-debug.log*
+.DS_Store
+Thumbs.db

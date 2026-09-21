@@ -1,2 +1,5 @@
-# Set default behavior to automatically normalize line endings.
-* text=auto
+# Keep repository text deterministic across Windows, macOS, Linux, and CI.
+* text=auto eol=lf
+
+*.png binary
+*.vsix binary

@@ -16,7 +16,7 @@
     ],
     "C_Cpp.default.compileCommands": "${workspaceFolder}/build/compile_commands.json",
 
-    "workbench.colorTheme": "MyTheme",
+    "workbench.colorTheme": "Akihabara Dark",
 
     "cmake.configureOnOpen": true,
     "cmake.buildDirectory": "${workspaceFolder}/build",
@@ -29,8 +29,6 @@
         "*.cmake": "cmake",
         "CMakeLists.txt": "cmake"
     },
-
-
 
     "debug.showBreakpointsInOverviewRuler": true
 }

@@ -1,11 +1,13 @@
+const fs = require("fs");
 const path = require("path");
-const { readTheme, writeTheme } = require("./theme-json");
+const { readTheme, serializeTheme, writeTheme } = require("./theme-json");
 
 const root = path.resolve(__dirname, "..");
 const darkPath = path.join(root, "themes", "akihabara-dark-color-theme.json");
 const lightPath = path.join(root, "themes", "akihabara-light-color-theme.json");
 const oledPath = path.join(root, "themes", "akihabara-oled-color-theme.json");
 const experimentalPath = path.join(root, "themes", "akihabara-experimental-color-theme.json");
+const checkOnly = process.argv.includes("--check");
 
 const source = readTheme(darkPath);
 
@@ -189,6 +191,9 @@ function buildVariant(label, type, colors) {
     if (source.semanticTokenColors) {
         theme.semanticTokenColors = source.semanticTokenColors;
     }
+    if (typeof source.semanticHighlighting === "boolean") {
+        theme.semanticHighlighting = source.semanticHighlighting;
+    }
 
     for (const [key, value] of Object.entries(source.colors)) {
         theme.colors[key] = colorForKey(key, value, colors);
@@ -197,11 +202,37 @@ function buildVariant(label, type, colors) {
     return theme;
 }
 
-writeTheme(lightPath, buildVariant("Akihabara Light", "light", palettes.light));
-writeTheme(oledPath, buildVariant("Akihabara OLED", "dark", palettes.oled));
-writeTheme(
-    experimentalPath,
-    buildVariant("Akihabara Experimental", "dark", palettes.experimental)
-);
+const variants = [
+    [lightPath, buildVariant("Akihabara Light", "light", palettes.light)],
+    [oledPath, buildVariant("Akihabara OLED", "dark", palettes.oled)],
+    [
+        experimentalPath,
+        buildVariant("Akihabara Experimental", "dark", palettes.experimental),
+    ],
+];
 
-console.log("Generated Akihabara Light, OLED, and Experimental theme variants.");
+if (checkOnly) {
+    const staleFiles = variants
+        .filter(([filePath, theme]) => {
+            const actual = fs.readFileSync(filePath, "utf8").replace(/\r\n/g, "\n");
+            return actual !== serializeTheme(theme);
+        })
+        .map(([filePath]) => path.relative(root, filePath));
+
+    if (staleFiles.length > 0) {
+        console.error("Generated themes are stale:");
+        for (const filePath of staleFiles) {
+            console.error(`- ${filePath}`);
+        }
+        console.error("Run npm run build:themes and commit the generated files.");
+        process.exit(1);
+    }
+
+    console.log(`Generated theme check passed for ${variants.length} variants.`);
+} else {
+    for (const [filePath, theme] of variants) {
+        writeTheme(filePath, theme);
+    }
+
+    console.log("Generated Akihabara Light, OLED, and Experimental theme variants.");
+}

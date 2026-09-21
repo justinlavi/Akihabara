@@ -34,6 +34,7 @@ Designed for **long sessions**: high contrast on black, saturated but discipline
 - [Color Table](#color-table)
 - [Installation](#installation)
 - [Recommendations](#recommendations)
+- [Development and Contributing](#development-and-contributing)
 - [Feedback](#feedback)
 - [Credits](#credits)
 
@@ -178,7 +179,19 @@ Install directly from the [Visual Studio Marketplace][marketplace_link], or sear
 ## Recommendations
 
 - **Font:** [Fira Code Retina][fira_code_link] (with ligatures enabled).
-- Consider disabling **Bracket Pair Colorization** in VS Code settings—this lets Akihabara’s semantic accents handle structure without interference.
+- Consider disabling **Bracket Pair Colorization** in VS Code settings—this lets Akihabara’s syntax accents handle structure without interference.
+
+---
+
+## Development and Contributing
+
+Akihabara is open source under the MIT License. Contributions and derivative
+themes are welcome. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the public fork
+workflow and [DEVELOPMENT.md](./DEVELOPMENT.md) for setup, preview, packaging,
+and release instructions.
+
+Normal commits and pushes update GitHub only; Marketplace publishing is a
+separate, explicit maintainer action.
 
 ---
 

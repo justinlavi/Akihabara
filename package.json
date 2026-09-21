@@ -1,8 +1,9 @@
 {
     "name": "akihabara",
     "displayName": "Akihabara",
-    "description": "Immerse yourself in the tranquil colors of Akihabara's night streets",
+    "description": "A neon, concept-driven VS Code color theme inspired by Akihabara at night",
     "version": "4.9.0",
+    "private": true,
     "publisher": "justin-lavi",
     "license": "MIT",
     "author": {
@@ -11,12 +12,18 @@
     },
     "scripts": {
         "build:themes": "node scripts/generate-theme-variants.js",
-        "check": "npm run check:version && npm run check:theme-code-colors",
+        "check": "npm run check:public-safety && npm run check:version && npm run check:theme-code-colors && npm run check:generated-themes",
+        "check:generated-themes": "node scripts/generate-theme-variants.js --check",
+        "check:public-safety": "node scripts/check-public-safety.js",
         "check:theme-code-colors": "node scripts/check-theme-code-colors.js",
         "check:version": "node scripts/check-version.js",
+        "prepublishOnly": "node scripts/block-npm-publish.js",
         "vscode:prepublish": "npm run check",
         "package": "npm run check && vsce package",
-        "publish": "npm run check && vsce publish"
+        "release:marketplace": "npm run check && vsce publish"
+    },
+    "devDependencies": {
+        "@vscode/vsce": "4.0.0"
     },
     "files": [
         "package.json",
@@ -25,7 +32,6 @@
         "assets/icon.png",
         "assets/sample_cpp_header.png",
         "assets/sample_cpp_source.png",
-        "scripts/**",
         "themes/**",
         "LICENSE.txt"
     ],
@@ -47,34 +53,29 @@
         "vscode": "^1.85.0"
     },
     "categories": [
-        "Themes",
-        "Other"
+        "Themes"
     ],
     "contributes": {
         "themes": [
             {
                 "label": "Akihabara Light",
                 "uiTheme": "vs",
-                "path": "./themes/akihabara-light-color-theme.json",
-                "semanticHighlighting": true
+                "path": "./themes/akihabara-light-color-theme.json"
             },
             {
                 "label": "Akihabara Dark",
                 "uiTheme": "vs-dark",
-                "path": "./themes/akihabara-dark-color-theme.json",
-                "semanticHighlighting": true
+                "path": "./themes/akihabara-dark-color-theme.json"
             },
             {
                 "label": "Akihabara OLED",
                 "uiTheme": "vs-dark",
-                "path": "./themes/akihabara-oled-color-theme.json",
-                "semanticHighlighting": true
+                "path": "./themes/akihabara-oled-color-theme.json"
             },
             {
                 "label": "Akihabara Experimental",
                 "uiTheme": "vs-dark",
-                "path": "./themes/akihabara-experimental-color-theme.json",
-                "semanticHighlighting": true
+                "path": "./themes/akihabara-experimental-color-theme.json"
             }
         ]
     },
@@ -89,10 +90,12 @@
         "dark theme",
         "highlighting",
         "japan",
+        "light theme",
         "magenta",
         "modern",
         "neon",
         "night",
+        "oled theme",
         "pastel",
         "readable",
         "semantics",

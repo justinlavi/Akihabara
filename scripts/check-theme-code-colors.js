@@ -13,6 +13,7 @@ if (!Array.isArray(themeContributions) || themeContributions.length < 2) {
 function codeColorSignature(themePath) {
     const theme = readTheme(themePath);
     return JSON.stringify({
+        semanticHighlighting: theme.semanticHighlighting,
         tokenColors: theme.tokenColors || [],
         semanticTokenColors: theme.semanticTokenColors || {},
     });
