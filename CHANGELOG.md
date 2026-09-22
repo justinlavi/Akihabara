@@ -6,6 +6,7 @@
 - Expanded language-neutral TextMate scopes for markup, styles, configuration, SQL, shell, and modern application languages
 - Added a documented, validated catalog with representative fixtures for 44 language modes
 - Removed overly broad meta and punctuation selectors from function, method, and parameter coloring
+- Added an early Node.js compatibility check with PowerShell `fnm` recovery guidance
 
 ## [4.9.0] - 2026-07-07
 

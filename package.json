@@ -12,9 +12,10 @@
     },
     "scripts": {
         "build:themes": "node scripts/generate-theme-variants.js",
-        "check": "npm run check:public-safety && npm run check:version && npm run check:language-fixtures && npm run check:theme-code-colors && npm run check:generated-themes",
+        "check": "npm run check:node-version && npm run check:public-safety && npm run check:version && npm run check:language-fixtures && npm run check:theme-code-colors && npm run check:generated-themes",
         "check:generated-themes": "node scripts/generate-theme-variants.js --check",
         "check:language-fixtures": "node scripts/check-language-fixtures.js",
+        "check:node-version": "node scripts/check-node-version.js",
         "check:public-safety": "node scripts/check-public-safety.js",
         "check:theme-code-colors": "node scripts/check-theme-code-colors.js",
         "check:version": "node scripts/check-version.js",
@@ -22,6 +23,10 @@
         "vscode:prepublish": "npm run check",
         "package": "npm run check && vsce package",
         "release:marketplace": "npm run check && vsce publish"
+    },
+    "engines": {
+        "node": ">=22",
+        "vscode": "^1.85.0"
     },
     "devDependencies": {
         "@vscode/vsce": "4.0.0"
@@ -50,9 +55,6 @@
     "galleryBanner": {
         "color": "#0C0D12",
         "theme": "dark"
-    },
-    "engines": {
-        "vscode": "^1.85.0"
     },
     "categories": [
         "Themes"

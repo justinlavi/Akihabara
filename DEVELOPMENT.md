@@ -49,6 +49,18 @@ Node 24 is recorded in `.nvmrc`. It satisfies the Node 22-or-newer requirement
 of the pinned `@vscode/vsce` 4.0.0 packaging tool. A Node version manager is
 optional but makes switching machines easier.
 
+If Node 24 is installed through `fnm` but an existing PowerShell terminal still
+reports an older version, activate `fnm` in that terminal before continuing:
+
+```powershell
+fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression
+fnm use 24
+node --version
+```
+
+Setting Node 24 as the `fnm` default does not by itself update a PowerShell
+session in which `fnm env` has not been evaluated.
+
 Verify the command-line tools in a new terminal:
 
 ```sh
@@ -323,7 +335,9 @@ fallback.
 
 If a new machine cannot publish, check these in order:
 
-1. `node --version` is 24.x (or another supported version at least 22).
+1. `node --version` is 24.x (or another supported version at least 22). If
+   `fnm list` shows Node 24 but `node --version` does not, activate `fnm` in the
+   current PowerShell session using the commands in New-machine setup.
 2. `npm ci` succeeds and `npx vsce --version` reports the pinned tool.
 3. The signed-in Microsoft/Azure identity is a contributor to the publisher ID
    in `package.json`.
@@ -337,7 +351,7 @@ If a new machine cannot publish, check these in order:
 | --- | --- |
 | `npm ci` | Restore the pinned development toolchain |
 | `npm run build:themes` | Regenerate Light, OLED, and Experimental from Dark |
-| `npm run check` | Check public safety, version alignment, language fixtures, cross-variant code colors, and generated-file freshness |
+| `npm run check` | Check Node compatibility, public safety, version alignment, language fixtures, cross-variant code colors, and generated-file freshness |
 | `npm run package` | Validate and build a VSIX |
 | `npx vsce ls` | Preview the exact VSIX file list |
 | `npm run release:marketplace` | Explicitly validate and publish an already-versioned release |
