@@ -1,0 +1,19 @@
+{{- /* Go html/template fixture with actions, pipelines, variables, and nesting. */ -}}
+{{ define "review-card" }}
+<article class="review" data-id="{{ .ID }}">
+    <h2>{{ .Title | html }}</h2>
+    {{ if .Score }}
+        {{ $label := printf "%.1f" .Score }}
+        <meter min="0" max="10" value="{{ .Score }}">{{ $label }}</meter>
+    {{ else }}
+        <em>Unrated</em>
+    {{ end }}
+    <ul>
+        {{ range $index, $tag := .Tags }}
+            <li data-index="{{ $index }}">{{ $tag }}</li>
+        {{ end }}
+    </ul>
+</article>
+{{ end }}
+
+{{ template "review-card" .Review }}

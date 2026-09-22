@@ -1,0 +1,18 @@
+@accent: #7757ba;
+@breakpoint: 48rem;
+
+.rounded(@radius: 0.5rem) {
+    border-radius: @radius;
+}
+
+.card {
+    .rounded();
+    color: @accent;
+
+    &__title { font-weight: 700; }
+    &:hover { color: lighten(@accent, 10%); }
+
+    @media (max-width: @breakpoint) {
+        display: none;
+    }
+}

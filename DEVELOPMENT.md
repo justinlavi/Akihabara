@@ -18,17 +18,20 @@ registered in `package.json`.
 | `scripts/generate-theme-variants.js` | Variant palettes and workbench-color transformation rules |
 | `scripts/check-version.js` | Requires the manifest version to match the newest changelog entry |
 | `scripts/check-public-safety.js` | Rejects common credentials and credential files before packaging |
+| `scripts/check-language-fixtures.js` | Requires one registered, nontrivial fixture per supported language mode |
 | `scripts/check-theme-code-colors.js` | Requires identical TextMate and semantic token settings in every variant |
 | `scripts/generate-theme-variants.js --check` | Fails when checked-in generated variants do not match their sources |
 | `scripts/theme-json.js` | Small JSON-with-comments reader and generated-theme writer |
-| `test/` | Manual syntax-highlighting fixtures for C++, CMake, JSON, and Python |
+| `LANGUAGE_SUPPORT.md` | Public coverage catalog, grammar boundaries, and filename aliases |
+| `test/languages/manifest.json` | Machine-readable language-mode and fixture catalog |
+| `test/` | Manual syntax-highlighting fixtures for every cataloged language mode |
 | `assets/` | Marketplace icon and README screenshots |
 | `.vscode/launch.json` | Launches the extension in a VS Code Extension Development Host |
 | `.github/workflows/validate.yml` | Validation-only CI; it never publishes or receives release credentials |
 | `package.json` `files` | Allowlist that keeps development-only files out of the published VSIX |
 
 The dark theme is the generator's source of truth. The generator copies its
-`tokenColors` (and `semanticTokenColors`, if later enabled) into all variants,
+`tokenColors`, `semanticHighlighting`, and `semanticTokenColors` into all variants,
 then derives each non-dark variant's `colors` map from the palette and mapping
 logic in `scripts/generate-theme-variants.js`.
 
@@ -174,16 +177,18 @@ Commit all three regenerated variants whenever the build changes them. The
 generator deliberately makes code colors identical across variants while
 allowing their workbench colors to differ.
 
-### Semantic-highlighting status
+### Semantic and TextMate highlighting
 
-The current released themes are driven by TextMate `tokenColors`. A draft
-`semanticHighlighting`/`semanticTokenColors` section exists but is commented
-out in the dark theme, so no theme-level semantic setting is currently active.
+Akihabara enables semantic highlighting and maps VS Code's standard semantic
+token types to the same concept families used by `tokenColors`. TextMate rules
+remain the lexical baseline and cover languages or files without a semantic
+provider. Keep semantic rules language-neutral whenever possible and add a
+language-qualified exception only after checking the emitted token with
+**Developer: Inspect Editor Tokens and Scopes**.
 
-If semantic rules are activated later, put `"semanticHighlighting": true` and
-`semanticTokenColors` in the dark theme JSON, regenerate, and test several
-language providers before release. The generator preserves those settings, and
-the cross-variant check compares them when present.
+The generator preserves both systems in every variant, and the cross-variant
+check compares them. Follow [LANGUAGE_SUPPORT.md](./LANGUAGE_SUPPORT.md) and the
+fixture workflow in `test/languages/README.md` for coverage changes.
 
 ## Build and test a VSIX locally
 
@@ -332,7 +337,7 @@ If a new machine cannot publish, check these in order:
 | --- | --- |
 | `npm ci` | Restore the pinned development toolchain |
 | `npm run build:themes` | Regenerate Light, OLED, and Experimental from Dark |
-| `npm run check` | Check public safety, version alignment, cross-variant code colors, and generated-file freshness |
+| `npm run check` | Check public safety, version alignment, language fixtures, cross-variant code colors, and generated-file freshness |
 | `npm run package` | Validate and build a VSIX |
 | `npx vsce ls` | Preview the exact VSIX file list |
 | `npm run release:marketplace` | Explicitly validate and publish an already-versioned release |
@@ -342,6 +347,7 @@ If a new machine cannot publish, check these in order:
 
 - [VS Code color-theme guide](https://code.visualstudio.com/api/extension-guides/color-theme)
 - [VS Code syntax-highlighting and scope-inspector guide](https://code.visualstudio.com/api/language-extensions/syntax-highlight-guide)
+- [VS Code semantic-highlighting guide](https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide)
 - [VS Code theme-color reference](https://code.visualstudio.com/api/references/theme-color)
 - [VS Code extension publishing guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension)
 - [VS Code command-line guide](https://code.visualstudio.com/docs/configure/command-line)

@@ -1,5 +1,12 @@
 # Change Log
 
+## [5.0.0] - 2026-09-21
+
+- Enabled semantic highlighting with concept-driven colors for standard token types and modifiers
+- Expanded language-neutral TextMate scopes for markup, styles, configuration, SQL, shell, and modern application languages
+- Added a documented, validated catalog with representative fixtures for 44 language modes
+- Removed overly broad meta and punctuation selectors from function, method, and parameter coloring
+
 ## [4.9.0] - 2026-07-07
 
 - Added Akihabara Light, Akihabara Dark, Akihabara OLED, and Akihabara Experimental variants

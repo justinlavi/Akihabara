@@ -1,0 +1,21 @@
+---
+name: akihabara-fixture
+enabled: true
+count: 3
+empty: null
+defaults: &defaults
+  timeout: 30
+  labels: [theme, syntax]
+services:
+  preview:
+    <<: *defaults
+    command: >-
+      npm run preview
+    environment:
+      MODE: development
+  validate:
+    matrix:
+      node: [22, 24]
+      os:
+        - windows
+        - linux

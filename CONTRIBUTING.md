@@ -49,6 +49,8 @@ it. Maintainers handle release versioning after changes are accepted.
 - Run `npm run build:themes` after changing either source.
 - Use **Developer: Inspect Editor Tokens and Scopes** in VS Code when diagnosing
   token color behavior.
+- Add or update a fixture and `test/languages/manifest.json` when changing
+  language coverage; see [LANGUAGE_SUPPORT.md](./LANGUAGE_SUPPORT.md).
 
 ## Required checks
 

@@ -1,0 +1,16 @@
+@layer components {
+    :root { --accent: #7757ba; }
+
+    .card[data-state="active"] > .card__title:hover {
+        display: grid;
+        grid-template-columns: minmax(12rem, 1fr) auto;
+        gap: clamp(0.5rem, 2vw, 1rem);
+        color: var(--accent, rebeccapurple);
+        background: linear-gradient(135deg, #171322, rgb(14 163 165 / 40%));
+        transition: color 150ms ease-in-out;
+    }
+
+    @media (width < 40rem) {
+        #app { padding-inline: 1rem !important; }
+    }
+}

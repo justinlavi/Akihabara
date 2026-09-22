@@ -2,7 +2,7 @@
     "name": "akihabara",
     "displayName": "Akihabara",
     "description": "A neon, concept-driven VS Code color theme inspired by Akihabara at night",
-    "version": "4.9.0",
+    "version": "5.0.0",
     "private": true,
     "publisher": "justin-lavi",
     "license": "MIT",
@@ -12,8 +12,9 @@
     },
     "scripts": {
         "build:themes": "node scripts/generate-theme-variants.js",
-        "check": "npm run check:public-safety && npm run check:version && npm run check:theme-code-colors && npm run check:generated-themes",
+        "check": "npm run check:public-safety && npm run check:version && npm run check:language-fixtures && npm run check:theme-code-colors && npm run check:generated-themes",
         "check:generated-themes": "node scripts/generate-theme-variants.js --check",
+        "check:language-fixtures": "node scripts/check-language-fixtures.js",
         "check:public-safety": "node scripts/check-public-safety.js",
         "check:theme-code-colors": "node scripts/check-theme-code-colors.js",
         "check:version": "node scripts/check-version.js",
@@ -28,6 +29,7 @@
     "files": [
         "package.json",
         "README.md",
+        "LANGUAGE_SUPPORT.md",
         "CHANGELOG.md",
         "assets/icon.png",
         "assets/sample_cpp_header.png",

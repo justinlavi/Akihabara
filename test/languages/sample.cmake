@@ -1,5 +1,4 @@
-# CMakeLists.txt
-# Build configuration for graphics_2d.cpp to test C++ syntax highlighting
+# Build configuration for sample.cpp to test C++ syntax highlighting
 
 cmake_minimum_required(VERSION 3.15)
 
@@ -16,7 +15,7 @@ add_definitions(-DENABLE_DEBUG_LOGGING=1)
 add_definitions(-DMAX_FRAMES=60)
 
 # Source file
-set(SOURCES graphics_2d.cpp)
+set(SOURCES sample.cpp)
 
 set(MY_VAR "TestValue" CACHE STRING "A test cache variable")
 

@@ -1,0 +1,20 @@
+"""A review written by a member."""
+type Review implements Node {
+    id: ID!
+    title: String!
+    score: Float
+    state: ReviewState!
+}
+
+interface Node { id: ID! }
+enum ReviewState { DRAFT PUBLISHED }
+
+input ReviewFilter { minimumScore: Float = 0 }
+
+query Reviews($filter: ReviewFilter, $limit: Int! = 10) {
+    reviews(filter: $filter, limit: $limit) {
+        ...ReviewFields
+    }
+}
+
+fragment ReviewFields on Review { id title score state }

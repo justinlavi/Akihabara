@@ -1,5 +1,7 @@
+// Comprehensive C++ header fixture used by the screenshot sample.
 #pragma once
 
+#include <cstdint>
 #include <iostream>
 #include <string>
 

@@ -34,6 +34,7 @@ Designed for **long sessions**: high contrast on black, saturated but discipline
 - [Color Table](#color-table)
 - [Installation](#installation)
 - [Recommendations](#recommendations)
+- [Language Support](#language-support)
 - [Development and Contributing](#development-and-contributing)
 - [Feedback](#feedback)
 - [Credits](#credits)
@@ -180,6 +181,18 @@ Install directly from the [Visual Studio Marketplace][marketplace_link], or sear
 
 - **Font:** [Fira Code Retina][fira_code_link] (with ligatures enabled).
 - Consider disabling **Bracket Pair Colorization** in VS Code settings—this lets Akihabara’s syntax accents handle structure without interference.
+
+---
+
+## Language Support
+
+Akihabara uses language-neutral TextMate scopes plus semantic token colors to
+carry its concept-to-color system across language families. The repository
+maintains visual fixtures for 44 VS Code language modes spanning application,
+systems, web, data, scripting, configuration, and infrastructure work.
+
+See [LANGUAGE_SUPPORT.md](./LANGUAGE_SUPPORT.md) for the complete catalog,
+grammar requirements, fixtures, filename aliases, and coverage workflow.
 
 ---
 

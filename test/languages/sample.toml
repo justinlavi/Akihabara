@@ -1,0 +1,17 @@
+title = "Akihabara fixture"
+enabled = true
+retries = 3
+ratio = 0.75
+released = 2026-09-21T12:00:00Z
+colors = ["purple", "teal", "blue"]
+
+[owner]
+name = "Theme Maintainer"
+
+[database]
+ports = [5432, 5433]
+connection_max = 5000
+
+[[themes]]
+name = "Dark"
+background = "#171322"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="https://example.invalid/catalog" version="1.0">
+    <!-- Elements, namespaces, attributes, entities, CDATA, and processing instructions. -->
+    <theme id="akihabara" enabled="true">
+        <name>Akihabara &amp; Night</name>
+        <colors>
+            <color role="control" value="#7757BA" />
+        </colors>
+        <![CDATA[raw <content> remains text]]>
+    </theme>
+</catalog>

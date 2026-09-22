@@ -1,0 +1,7 @@
+# Ignore grammar fixture
+node_modules/
+dist/
+*.log
+!.keep
+**/.cache/
+/local-only.env

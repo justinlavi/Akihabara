@@ -6,7 +6,7 @@ end_of_line = lf
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[*.{js,json,jsonc,md,py,cpp,h,cmake}]
+[*.{c,cc,cpp,cs,css,dart,fs,go,h,hpp,html,java,jl,js,json,jsonc,jsx,kt,less,lua,md,php,ps1,py,r,rb,rs,scss,sh,sql,svelte,swift,tf,toml,ts,tsx,vue,xml}]
 indent_style = space
 indent_size = 4
 

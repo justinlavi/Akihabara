@@ -1,4 +1,4 @@
-# graphics_2d.py
+# Comprehensive Python syntax-highlighting fixture.
 # A 2D graphics utility to test comprehensive Python syntax and semantic highlighting
 
 # Standard library and third-party imports

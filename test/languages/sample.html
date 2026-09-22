@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Akihabara fixture</title>
+    <style>
+        :root { color-scheme: dark; }
+        .card[data-active="true"] { color: rebeccapurple; }
+    </style>
+</head>
+<body>
+    <!-- Tags, attributes, entities, forms, embedded CSS, and embedded JS. -->
+    <main id="app" class="card" data-active="true">
+        <h1>Theme &amp; syntax</h1>
+        <label for="query">Search</label>
+        <input id="query" name="query" required>
+    </main>
+    <script type="module">
+        const app = document.querySelector('#app');
+        app?.addEventListener('click', () => console.log('selected'));
+    </script>
+</body>
+</html>

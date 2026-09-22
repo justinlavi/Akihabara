@@ -1,13 +1,14 @@
-#include "graphics_2d.h"
+#include "sample.h"
 
 const double Point2D::origin = 0.0;
+double graphics_2d::canvas_width = 0.0;
 
 Shape::Shape(double x) : center_x(x) {}
 
 Circle::Circle(double x, double radius)
     : Shape(x), radius_(radius) {}
 
-// This is a comment inside graphics_2d.cpp
+// This is a comment inside the graphics fixture.
 void Circle::draw()
 {
     std::cout << "Circle at " << center_x
@@ -61,6 +62,8 @@ int main()
 
     std::cout << "Distance: " << point.distance() << "\n";
     std::cout << "Mode: " << static_cast<int>(RenderMode::FILLED) << "\n";
+    std::cout << "Status: " << status << ", max FPS: " << max_fps
+              << ", frame time: " << frame_time << "\n";
 
     return 0;
 }

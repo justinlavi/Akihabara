@@ -2,6 +2,14 @@
     "recommendations": [
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools",
-        "ms-python.python"
+        "ms-python.python",
+        "tamasfe.even-better-toml",
+        "fwcd.kotlin",
+        "graphql.vscode-graphql-syntax",
+        "hashicorp.terraform",
+        "ndonfris.fish-lsp",
+        "xembly.gomplate",
+        "vue.volar",
+        "svelte.svelte-vscode"
     ]
 }

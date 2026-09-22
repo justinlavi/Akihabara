@@ -1,0 +1,13 @@
+{
+    // Keys, strings, numbers, booleans, null, arrays, and nested objects.
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "name": "akihabara-fixture",
+    "enabled": true,
+    "threshold": 0.75,
+    "fallback": null,
+    "tags": ["theme", "syntax", "jsonc"],
+    "palette": {
+        "control": "#7757BA",
+        "action": "#00A5E0"
+    }
+}

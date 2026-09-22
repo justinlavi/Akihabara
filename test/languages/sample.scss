@@ -1,0 +1,18 @@
+$accent: #7757ba;
+$spacing: (small: 0.5rem, medium: 1rem);
+
+@mixin focus-ring($color: $accent) {
+    outline: 2px solid $color;
+    outline-offset: 3px;
+}
+
+.card {
+    padding: map-get($spacing, medium);
+
+    &__title { color: $accent; }
+    &:focus-visible { @include focus-ring; }
+
+    @for $index from 1 through 3 {
+        &--level-#{$index} { z-index: $index; }
+    }
+}
